@@ -1,0 +1,22 @@
+=============================================
+============= RESUMING TRAINING =============
+=============================================
+=================== DATA ====================
+            Training set: 4431 examples
+          Validation set: 1477 examples
+              Batch size: 256
+=================== MODEL ===================
+--------------- ARCHITECTURE ----------------
+            Type       Size     Dropout (keep p)
+ Layer 1    5x5 Conv   32       0.9            
+ Layer 2    5x5 Conv   64       0.8            
+ Layer 3    5x5 Conv   128      0.7            
+ Layer 4    FC         1024     0.5            
+---------------- PARAMETERS -----------------
+     Learning rate decay: Disabled (rate = 0.0001)
+       L2 Regularization: Enabled (lambda = 0.0001)
+          Early stopping: Enabled (patience = 100)
+ Keep training old model: Enabled
+Failed restoring previously trained model: file does not exist.
+================= TRAINING ==================
+ Timestamp: 2018/01/16 19:30:13

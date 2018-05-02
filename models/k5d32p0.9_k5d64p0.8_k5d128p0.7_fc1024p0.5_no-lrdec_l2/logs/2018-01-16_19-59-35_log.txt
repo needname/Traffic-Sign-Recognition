@@ -1,0 +1,3986 @@
+=================== DATA ====================
+            Training set: 5908 examples
+          Validation set: 1970 examples
+              Batch size: 256
+=================== MODEL ===================
+--------------- ARCHITECTURE ----------------
+            Type       Size     Dropout (keep p)
+ Layer 1    5x5 Conv   32       0.9            
+ Layer 2    5x5 Conv   64       0.8            
+ Layer 3    5x5 Conv   128      0.7            
+ Layer 4    FC         1024     0.5            
+---------------- PARAMETERS -----------------
+     Learning rate decay: Disabled (rate = 0.0001)
+       L2 Regularization: Enabled (lambda = 0.0001)
+          Early stopping: Enabled (patience = 100)
+ Keep training old model: Disabled
+================= TRAINING ==================
+ Timestamp: 2018/01/16 19:59:37
+-------------- EPOCH    0/1001 --------------
+     Train loss: 1.89162898, accuracy: 53.40%
+Validation loss: 1.89493334, accuracy: 51.83%
+      Best loss: inf at epoch 0
+   Elapsed time: 00:00:22
+      Timestamp: 2018/01/16 19:59:58
+-------------- EPOCH    1/1001 --------------
+     Train loss: 1.54557085, accuracy: 73.07%
+Validation loss: 1.55753446, accuracy: 72.84%
+      Best loss: 1.89493334 at epoch 0
+   Elapsed time: 00:00:31
+      Timestamp: 2018/01/16 20:00:06
+-------------- EPOCH    2/1001 --------------
+     Train loss: 1.09089518, accuracy: 81.01%
+Validation loss: 1.11912942, accuracy: 80.25%
+      Best loss: 1.55753446 at epoch 1
+   Elapsed time: 00:00:40
+      Timestamp: 2018/01/16 20:00:15
+-------------- EPOCH    3/1001 --------------
+     Train loss: 0.73603904, accuracy: 77.37%
+Validation loss: 0.77412421, accuracy: 74.62%
+      Best loss: 1.11912942 at epoch 2
+   Elapsed time: 00:00:48
+      Timestamp: 2018/01/16 20:00:24
+-------------- EPOCH    4/1001 --------------
+     Train loss: 0.51602602, accuracy: 84.17%
+Validation loss: 0.55210608, accuracy: 82.34%
+      Best loss: 0.77412421 at epoch 3
+   Elapsed time: 00:00:57
+      Timestamp: 2018/01/16 20:00:32
+-------------- EPOCH    5/1001 --------------
+     Train loss: 0.41432649, accuracy: 90.76%
+Validation loss: 0.43847495, accuracy: 89.14%
+      Best loss: 0.55210608 at epoch 4
+   Elapsed time: 00:01:05
+      Timestamp: 2018/01/16 20:00:41
+-------------- EPOCH    6/1001 --------------
+     Train loss: 0.35335478, accuracy: 91.28%
+Validation loss: 0.37604555, accuracy: 90.56%
+      Best loss: 0.43847495 at epoch 5
+   Elapsed time: 00:01:14
+      Timestamp: 2018/01/16 20:00:49
+-------------- EPOCH    7/1001 --------------
+     Train loss: 0.30202457, accuracy: 91.72%
+Validation loss: 0.33176821, accuracy: 90.91%
+      Best loss: 0.37604555 at epoch 6
+   Elapsed time: 00:01:23
+      Timestamp: 2018/01/16 20:00:58
+-------------- EPOCH    8/1001 --------------
+     Train loss: 0.27715883, accuracy: 92.48%
+Validation loss: 0.30574894, accuracy: 90.91%
+      Best loss: 0.33176821 at epoch 7
+   Elapsed time: 00:01:32
+      Timestamp: 2018/01/16 20:01:07
+-------------- EPOCH    9/1001 --------------
+     Train loss: 0.22200321, accuracy: 94.91%
+Validation loss: 0.24468763, accuracy: 94.21%
+      Best loss: 0.30574894 at epoch 8
+   Elapsed time: 00:01:40
+      Timestamp: 2018/01/16 20:01:16
+-------------- EPOCH   10/1001 --------------
+     Train loss: 0.20873521, accuracy: 95.19%
+Validation loss: 0.23597527, accuracy: 93.81%
+      Best loss: 0.24468763 at epoch 9
+   Elapsed time: 00:01:49
+      Timestamp: 2018/01/16 20:01:25
+-------------- EPOCH   11/1001 --------------
+     Train loss: 0.17945540, accuracy: 95.48%
+Validation loss: 0.20142338, accuracy: 95.28%
+      Best loss: 0.23597527 at epoch 10
+   Elapsed time: 00:01:58
+      Timestamp: 2018/01/16 20:01:34
+-------------- EPOCH   12/1001 --------------
+     Train loss: 0.16898702, accuracy: 95.94%
+Validation loss: 0.19847538, accuracy: 94.77%
+      Best loss: 0.20142338 at epoch 11
+   Elapsed time: 00:02:07
+      Timestamp: 2018/01/16 20:01:43
+-------------- EPOCH   13/1001 --------------
+     Train loss: 0.14859742, accuracy: 96.28%
+Validation loss: 0.18383689, accuracy: 94.72%
+      Best loss: 0.19847538 at epoch 12
+   Elapsed time: 00:02:16
+      Timestamp: 2018/01/16 20:01:52
+-------------- EPOCH   14/1001 --------------
+     Train loss: 0.13460319, accuracy: 96.73%
+Validation loss: 0.16437404, accuracy: 95.38%
+      Best loss: 0.18383689 at epoch 13
+   Elapsed time: 00:02:25
+      Timestamp: 2018/01/16 20:02:00
+-------------- EPOCH   15/1001 --------------
+     Train loss: 0.11807346, accuracy: 97.21%
+Validation loss: 0.14571069, accuracy: 96.24%
+      Best loss: 0.16437404 at epoch 14
+   Elapsed time: 00:02:33
+      Timestamp: 2018/01/16 20:02:09
+-------------- EPOCH   16/1001 --------------
+     Train loss: 0.10967150, accuracy: 97.56%
+Validation loss: 0.13795869, accuracy: 96.45%
+      Best loss: 0.14571069 at epoch 15
+   Elapsed time: 00:02:42
+      Timestamp: 2018/01/16 20:02:17
+-------------- EPOCH   17/1001 --------------
+     Train loss: 0.10134885, accuracy: 97.58%
+Validation loss: 0.13112877, accuracy: 96.60%
+      Best loss: 0.13795869 at epoch 16
+   Elapsed time: 00:02:50
+      Timestamp: 2018/01/16 20:02:26
+-------------- EPOCH   18/1001 --------------
+     Train loss: 0.10038002, accuracy: 97.21%
+Validation loss: 0.12695740, accuracy: 96.80%
+      Best loss: 0.13112877 at epoch 17
+   Elapsed time: 00:02:59
+      Timestamp: 2018/01/16 20:02:35
+-------------- EPOCH   19/1001 --------------
+     Train loss: 0.09534739, accuracy: 97.48%
+Validation loss: 0.12131356, accuracy: 97.11%
+      Best loss: 0.12695740 at epoch 18
+   Elapsed time: 00:03:08
+      Timestamp: 2018/01/16 20:02:43
+-------------- EPOCH   20/1001 --------------
+     Train loss: 0.08509952, accuracy: 97.99%
+Validation loss: 0.10976502, accuracy: 97.36%
+      Best loss: 0.12131356 at epoch 19
+   Elapsed time: 00:03:17
+      Timestamp: 2018/01/16 20:02:52
+-------------- EPOCH   21/1001 --------------
+     Train loss: 0.07759635, accuracy: 98.21%
+Validation loss: 0.11189668, accuracy: 97.01%
+      Best loss: 0.10976502 at epoch 20
+   Elapsed time: 00:03:25
+      Timestamp: 2018/01/16 20:03:01
+-------------- EPOCH   22/1001 --------------
+     Train loss: 0.07790977, accuracy: 98.05%
+Validation loss: 0.11537760, accuracy: 97.01%
+      Best loss: 0.10976502 at epoch 20
+   Elapsed time: 00:03:33
+      Timestamp: 2018/01/16 20:03:09
+-------------- EPOCH   23/1001 --------------
+     Train loss: 0.06828616, accuracy: 98.38%
+Validation loss: 0.10056657, accuracy: 97.41%
+      Best loss: 0.10976502 at epoch 20
+   Elapsed time: 00:03:42
+      Timestamp: 2018/01/16 20:03:17
+-------------- EPOCH   24/1001 --------------
+     Train loss: 0.06805138, accuracy: 98.26%
+Validation loss: 0.09610455, accuracy: 97.46%
+      Best loss: 0.10056657 at epoch 23
+   Elapsed time: 00:03:51
+      Timestamp: 2018/01/16 20:03:26
+-------------- EPOCH   25/1001 --------------
+     Train loss: 0.05993458, accuracy: 98.58%
+Validation loss: 0.09438486, accuracy: 97.46%
+      Best loss: 0.09610455 at epoch 24
+   Elapsed time: 00:04:00
+      Timestamp: 2018/01/16 20:03:36
+-------------- EPOCH   26/1001 --------------
+     Train loss: 0.05503014, accuracy: 98.71%
+Validation loss: 0.08892083, accuracy: 97.66%
+      Best loss: 0.09438486 at epoch 25
+   Elapsed time: 00:04:09
+      Timestamp: 2018/01/16 20:03:44
+-------------- EPOCH   27/1001 --------------
+     Train loss: 0.05774436, accuracy: 98.63%
+Validation loss: 0.09424770, accuracy: 97.46%
+      Best loss: 0.08892083 at epoch 26
+   Elapsed time: 00:04:17
+      Timestamp: 2018/01/16 20:03:53
+-------------- EPOCH   28/1001 --------------
+     Train loss: 0.04881461, accuracy: 98.80%
+Validation loss: 0.07971501, accuracy: 97.97%
+      Best loss: 0.08892083 at epoch 26
+   Elapsed time: 00:04:25
+      Timestamp: 2018/01/16 20:04:01
+-------------- EPOCH   29/1001 --------------
+     Train loss: 0.04900914, accuracy: 98.70%
+Validation loss: 0.07719020, accuracy: 97.97%
+      Best loss: 0.07971501 at epoch 28
+   Elapsed time: 00:04:34
+      Timestamp: 2018/01/16 20:04:09
+-------------- EPOCH   30/1001 --------------
+     Train loss: 0.04203394, accuracy: 99.00%
+Validation loss: 0.07195989, accuracy: 98.22%
+      Best loss: 0.07719020 at epoch 29
+   Elapsed time: 00:04:42
+      Timestamp: 2018/01/16 20:04:18
+-------------- EPOCH   31/1001 --------------
+     Train loss: 0.04155251, accuracy: 98.98%
+Validation loss: 0.07273990, accuracy: 98.07%
+      Best loss: 0.07195989 at epoch 30
+   Elapsed time: 00:04:51
+      Timestamp: 2018/01/16 20:04:26
+-------------- EPOCH   32/1001 --------------
+     Train loss: 0.04045438, accuracy: 99.12%
+Validation loss: 0.07077118, accuracy: 98.22%
+      Best loss: 0.07195989 at epoch 30
+   Elapsed time: 00:04:59
+      Timestamp: 2018/01/16 20:04:34
+-------------- EPOCH   33/1001 --------------
+     Train loss: 0.03887578, accuracy: 99.02%
+Validation loss: 0.07021212, accuracy: 98.17%
+      Best loss: 0.07077118 at epoch 32
+   Elapsed time: 00:05:08
+      Timestamp: 2018/01/16 20:04:44
+-------------- EPOCH   34/1001 --------------
+     Train loss: 0.03903542, accuracy: 99.10%
+Validation loss: 0.07401296, accuracy: 98.02%
+      Best loss: 0.07021212 at epoch 33
+   Elapsed time: 00:05:18
+      Timestamp: 2018/01/16 20:04:53
+-------------- EPOCH   35/1001 --------------
+     Train loss: 0.03634757, accuracy: 99.10%
+Validation loss: 0.06450431, accuracy: 98.48%
+      Best loss: 0.07021212 at epoch 33
+   Elapsed time: 00:05:27
+      Timestamp: 2018/01/16 20:05:02
+-------------- EPOCH   36/1001 --------------
+     Train loss: 0.04208400, accuracy: 98.97%
+Validation loss: 0.08112683, accuracy: 97.16%
+      Best loss: 0.06450431 at epoch 35
+   Elapsed time: 00:05:36
+      Timestamp: 2018/01/16 20:05:11
+-------------- EPOCH   37/1001 --------------
+     Train loss: 0.03222389, accuracy: 99.22%
+Validation loss: 0.06119368, accuracy: 98.32%
+      Best loss: 0.06450431 at epoch 35
+   Elapsed time: 00:05:45
+      Timestamp: 2018/01/16 20:05:20
+-------------- EPOCH   38/1001 --------------
+     Train loss: 0.02896880, accuracy: 99.46%
+Validation loss: 0.05868436, accuracy: 98.43%
+      Best loss: 0.06119368 at epoch 37
+   Elapsed time: 00:05:54
+      Timestamp: 2018/01/16 20:05:30
+-------------- EPOCH   39/1001 --------------
+     Train loss: 0.02674405, accuracy: 99.42%
+Validation loss: 0.05846277, accuracy: 98.32%
+      Best loss: 0.05868436 at epoch 38
+   Elapsed time: 00:06:03
+      Timestamp: 2018/01/16 20:05:39
+-------------- EPOCH   40/1001 --------------
+     Train loss: 0.02753458, accuracy: 99.51%
+Validation loss: 0.06176646, accuracy: 98.22%
+      Best loss: 0.05846277 at epoch 39
+   Elapsed time: 00:06:13
+      Timestamp: 2018/01/16 20:05:48
+-------------- EPOCH   41/1001 --------------
+     Train loss: 0.02563959, accuracy: 99.53%
+Validation loss: 0.05468489, accuracy: 98.53%
+      Best loss: 0.05846277 at epoch 39
+   Elapsed time: 00:06:22
+      Timestamp: 2018/01/16 20:05:57
+-------------- EPOCH   42/1001 --------------
+     Train loss: 0.02405650, accuracy: 99.51%
+Validation loss: 0.05897592, accuracy: 98.53%
+      Best loss: 0.05468489 at epoch 41
+   Elapsed time: 00:06:31
+      Timestamp: 2018/01/16 20:06:06
+-------------- EPOCH   43/1001 --------------
+     Train loss: 0.02254935, accuracy: 99.53%
+Validation loss: 0.05390425, accuracy: 98.48%
+      Best loss: 0.05468489 at epoch 41
+   Elapsed time: 00:06:40
+      Timestamp: 2018/01/16 20:06:15
+-------------- EPOCH   44/1001 --------------
+     Train loss: 0.02119812, accuracy: 99.53%
+Validation loss: 0.05561291, accuracy: 98.58%
+      Best loss: 0.05390425 at epoch 43
+   Elapsed time: 00:06:49
+      Timestamp: 2018/01/16 20:06:25
+-------------- EPOCH   45/1001 --------------
+     Train loss: 0.02230890, accuracy: 99.49%
+Validation loss: 0.05488646, accuracy: 98.53%
+      Best loss: 0.05390425 at epoch 43
+   Elapsed time: 00:06:58
+      Timestamp: 2018/01/16 20:06:34
+-------------- EPOCH   46/1001 --------------
+     Train loss: 0.02003287, accuracy: 99.68%
+Validation loss: 0.05113021, accuracy: 98.58%
+      Best loss: 0.05390425 at epoch 43
+   Elapsed time: 00:07:07
+      Timestamp: 2018/01/16 20:06:43
+-------------- EPOCH   47/1001 --------------
+     Train loss: 0.01701880, accuracy: 99.68%
+Validation loss: 0.04892037, accuracy: 98.58%
+      Best loss: 0.05113021 at epoch 46
+   Elapsed time: 00:07:17
+      Timestamp: 2018/01/16 20:06:52
+-------------- EPOCH   48/1001 --------------
+     Train loss: 0.01997271, accuracy: 99.64%
+Validation loss: 0.05483566, accuracy: 98.27%
+      Best loss: 0.04892037 at epoch 47
+   Elapsed time: 00:07:26
+      Timestamp: 2018/01/16 20:07:02
+-------------- EPOCH   49/1001 --------------
+     Train loss: 0.01817643, accuracy: 99.66%
+Validation loss: 0.05018783, accuracy: 98.53%
+      Best loss: 0.04892037 at epoch 47
+   Elapsed time: 00:07:35
+      Timestamp: 2018/01/16 20:07:11
+-------------- EPOCH   50/1001 --------------
+     Train loss: 0.01688356, accuracy: 99.63%
+Validation loss: 0.05112059, accuracy: 98.58%
+      Best loss: 0.04892037 at epoch 47
+   Elapsed time: 00:07:43
+      Timestamp: 2018/01/16 20:07:19
+-------------- EPOCH   51/1001 --------------
+     Train loss: 0.01897298, accuracy: 99.64%
+Validation loss: 0.04917692, accuracy: 98.58%
+      Best loss: 0.04892037 at epoch 47
+   Elapsed time: 00:07:51
+      Timestamp: 2018/01/16 20:07:27
+-------------- EPOCH   52/1001 --------------
+     Train loss: 0.01631358, accuracy: 99.81%
+Validation loss: 0.04961387, accuracy: 98.53%
+      Best loss: 0.04892037 at epoch 47
+   Elapsed time: 00:07:59
+      Timestamp: 2018/01/16 20:07:35
+-------------- EPOCH   53/1001 --------------
+     Train loss: 0.01349575, accuracy: 99.83%
+Validation loss: 0.04304176, accuracy: 98.73%
+      Best loss: 0.04892037 at epoch 47
+   Elapsed time: 00:08:07
+      Timestamp: 2018/01/16 20:07:43
+-------------- EPOCH   54/1001 --------------
+     Train loss: 0.01273048, accuracy: 99.85%
+Validation loss: 0.04319318, accuracy: 98.68%
+      Best loss: 0.04304176 at epoch 53
+   Elapsed time: 00:08:16
+      Timestamp: 2018/01/16 20:07:51
+-------------- EPOCH   55/1001 --------------
+     Train loss: 0.01176360, accuracy: 99.83%
+Validation loss: 0.04420081, accuracy: 98.63%
+      Best loss: 0.04304176 at epoch 53
+   Elapsed time: 00:08:24
+      Timestamp: 2018/01/16 20:07:59
+-------------- EPOCH   56/1001 --------------
+     Train loss: 0.01291048, accuracy: 99.80%
+Validation loss: 0.04869640, accuracy: 98.48%
+      Best loss: 0.04304176 at epoch 53
+   Elapsed time: 00:08:32
+      Timestamp: 2018/01/16 20:08:07
+-------------- EPOCH   57/1001 --------------
+     Train loss: 0.00993021, accuracy: 99.93%
+Validation loss: 0.03961070, accuracy: 98.68%
+      Best loss: 0.04304176 at epoch 53
+   Elapsed time: 00:08:40
+      Timestamp: 2018/01/16 20:08:15
+-------------- EPOCH   58/1001 --------------
+     Train loss: 0.00997510, accuracy: 99.86%
+Validation loss: 0.04065580, accuracy: 98.83%
+      Best loss: 0.03961070 at epoch 57
+   Elapsed time: 00:08:48
+      Timestamp: 2018/01/16 20:08:24
+-------------- EPOCH   59/1001 --------------
+     Train loss: 0.01011502, accuracy: 99.88%
+Validation loss: 0.04277233, accuracy: 98.63%
+      Best loss: 0.03961070 at epoch 57
+   Elapsed time: 00:08:56
+      Timestamp: 2018/01/16 20:08:32
+-------------- EPOCH   60/1001 --------------
+     Train loss: 0.00888583, accuracy: 99.93%
+Validation loss: 0.03879715, accuracy: 98.73%
+      Best loss: 0.03961070 at epoch 57
+   Elapsed time: 00:09:04
+      Timestamp: 2018/01/16 20:08:40
+-------------- EPOCH   61/1001 --------------
+     Train loss: 0.00838631, accuracy: 99.93%
+Validation loss: 0.04078526, accuracy: 98.68%
+      Best loss: 0.03879715 at epoch 60
+   Elapsed time: 00:09:13
+      Timestamp: 2018/01/16 20:08:48
+-------------- EPOCH   62/1001 --------------
+     Train loss: 0.00819020, accuracy: 99.95%
+Validation loss: 0.03922200, accuracy: 98.63%
+      Best loss: 0.03879715 at epoch 60
+   Elapsed time: 00:09:21
+      Timestamp: 2018/01/16 20:08:56
+-------------- EPOCH   63/1001 --------------
+     Train loss: 0.00876573, accuracy: 99.90%
+Validation loss: 0.04253667, accuracy: 98.68%
+      Best loss: 0.03879715 at epoch 60
+   Elapsed time: 00:09:29
+      Timestamp: 2018/01/16 20:09:04
+-------------- EPOCH   64/1001 --------------
+     Train loss: 0.00749020, accuracy: 99.95%
+Validation loss: 0.03840892, accuracy: 98.63%
+      Best loss: 0.03879715 at epoch 60
+   Elapsed time: 00:09:37
+      Timestamp: 2018/01/16 20:09:13
+-------------- EPOCH   65/1001 --------------
+     Train loss: 0.01014137, accuracy: 99.85%
+Validation loss: 0.04549428, accuracy: 98.38%
+      Best loss: 0.03840892 at epoch 64
+   Elapsed time: 00:09:46
+      Timestamp: 2018/01/16 20:09:21
+-------------- EPOCH   66/1001 --------------
+     Train loss: 0.01028824, accuracy: 99.85%
+Validation loss: 0.04386404, accuracy: 98.63%
+      Best loss: 0.03840892 at epoch 64
+   Elapsed time: 00:09:54
+      Timestamp: 2018/01/16 20:09:29
+-------------- EPOCH   67/1001 --------------
+     Train loss: 0.00755703, accuracy: 99.92%
+Validation loss: 0.03958743, accuracy: 98.68%
+      Best loss: 0.03840892 at epoch 64
+   Elapsed time: 00:10:02
+      Timestamp: 2018/01/16 20:09:38
+-------------- EPOCH   68/1001 --------------
+     Train loss: 0.00648566, accuracy: 99.95%
+Validation loss: 0.03775203, accuracy: 98.78%
+      Best loss: 0.03840892 at epoch 64
+   Elapsed time: 00:10:10
+      Timestamp: 2018/01/16 20:09:46
+-------------- EPOCH   69/1001 --------------
+     Train loss: 0.00593936, accuracy: 99.97%
+Validation loss: 0.03659877, accuracy: 98.83%
+      Best loss: 0.03775203 at epoch 68
+   Elapsed time: 00:10:19
+      Timestamp: 2018/01/16 20:09:54
+-------------- EPOCH   70/1001 --------------
+     Train loss: 0.00623882, accuracy: 99.95%
+Validation loss: 0.04012269, accuracy: 98.83%
+      Best loss: 0.03659877 at epoch 69
+   Elapsed time: 00:10:27
+      Timestamp: 2018/01/16 20:10:02
+-------------- EPOCH   71/1001 --------------
+     Train loss: 0.00551547, accuracy: 99.97%
+Validation loss: 0.03781966, accuracy: 98.93%
+      Best loss: 0.03659877 at epoch 69
+   Elapsed time: 00:10:35
+      Timestamp: 2018/01/16 20:10:11
+-------------- EPOCH   72/1001 --------------
+     Train loss: 0.00515347, accuracy: 99.97%
+Validation loss: 0.03514998, accuracy: 98.83%
+      Best loss: 0.03659877 at epoch 69
+   Elapsed time: 00:10:43
+      Timestamp: 2018/01/16 20:10:19
+-------------- EPOCH   73/1001 --------------
+     Train loss: 0.00453924, accuracy: 99.97%
+Validation loss: 0.03232342, accuracy: 99.09%
+      Best loss: 0.03514998 at epoch 72
+   Elapsed time: 00:10:52
+      Timestamp: 2018/01/16 20:10:27
+-------------- EPOCH   74/1001 --------------
+     Train loss: 0.00438595, accuracy: 99.98%
+Validation loss: 0.03286638, accuracy: 99.04%
+      Best loss: 0.03232342 at epoch 73
+   Elapsed time: 00:11:00
+      Timestamp: 2018/01/16 20:10:36
+-------------- EPOCH   75/1001 --------------
+     Train loss: 0.00398637, accuracy: 99.98%
+Validation loss: 0.03251271, accuracy: 98.88%
+      Best loss: 0.03232342 at epoch 73
+   Elapsed time: 00:11:08
+      Timestamp: 2018/01/16 20:10:44
+-------------- EPOCH   76/1001 --------------
+     Train loss: 0.00508735, accuracy: 99.98%
+Validation loss: 0.03704616, accuracy: 98.68%
+      Best loss: 0.03232342 at epoch 73
+   Elapsed time: 00:11:16
+      Timestamp: 2018/01/16 20:10:52
+-------------- EPOCH   77/1001 --------------
+     Train loss: 0.00637692, accuracy: 99.92%
+Validation loss: 0.04039022, accuracy: 98.58%
+      Best loss: 0.03232342 at epoch 73
+   Elapsed time: 00:11:24
+      Timestamp: 2018/01/16 20:11:00
+-------------- EPOCH   78/1001 --------------
+     Train loss: 0.00375541, accuracy: 99.97%
+Validation loss: 0.03347796, accuracy: 98.93%
+      Best loss: 0.03232342 at epoch 73
+   Elapsed time: 00:11:32
+      Timestamp: 2018/01/16 20:11:08
+-------------- EPOCH   79/1001 --------------
+     Train loss: 0.00342737, accuracy: 99.98%
+Validation loss: 0.03176527, accuracy: 98.83%
+      Best loss: 0.03232342 at epoch 73
+   Elapsed time: 00:11:41
+      Timestamp: 2018/01/16 20:11:16
+-------------- EPOCH   80/1001 --------------
+     Train loss: 0.00372942, accuracy: 100.00%
+Validation loss: 0.03310750, accuracy: 98.73%
+      Best loss: 0.03176527 at epoch 79
+   Elapsed time: 00:11:49
+      Timestamp: 2018/01/16 20:11:25
+-------------- EPOCH   81/1001 --------------
+     Train loss: 0.00335878, accuracy: 100.00%
+Validation loss: 0.03471577, accuracy: 98.88%
+      Best loss: 0.03176527 at epoch 79
+   Elapsed time: 00:11:57
+      Timestamp: 2018/01/16 20:11:33
+-------------- EPOCH   82/1001 --------------
+     Train loss: 0.00423129, accuracy: 99.98%
+Validation loss: 0.03591153, accuracy: 98.83%
+      Best loss: 0.03176527 at epoch 79
+   Elapsed time: 00:12:06
+      Timestamp: 2018/01/16 20:11:41
+-------------- EPOCH   83/1001 --------------
+     Train loss: 0.00285983, accuracy: 100.00%
+Validation loss: 0.03196182, accuracy: 98.83%
+      Best loss: 0.03176527 at epoch 79
+   Elapsed time: 00:12:14
+      Timestamp: 2018/01/16 20:11:49
+-------------- EPOCH   84/1001 --------------
+     Train loss: 0.00258681, accuracy: 100.00%
+Validation loss: 0.03019017, accuracy: 98.88%
+      Best loss: 0.03176527 at epoch 79
+   Elapsed time: 00:12:22
+      Timestamp: 2018/01/16 20:11:57
+-------------- EPOCH   85/1001 --------------
+     Train loss: 0.00278481, accuracy: 100.00%
+Validation loss: 0.03248386, accuracy: 98.98%
+      Best loss: 0.03019017 at epoch 84
+   Elapsed time: 00:12:30
+      Timestamp: 2018/01/16 20:12:06
+-------------- EPOCH   86/1001 --------------
+     Train loss: 0.00223795, accuracy: 100.00%
+Validation loss: 0.02971248, accuracy: 99.04%
+      Best loss: 0.03019017 at epoch 84
+   Elapsed time: 00:12:38
+      Timestamp: 2018/01/16 20:12:14
+-------------- EPOCH   87/1001 --------------
+     Train loss: 0.00260338, accuracy: 100.00%
+Validation loss: 0.03294841, accuracy: 98.88%
+      Best loss: 0.02971248 at epoch 86
+   Elapsed time: 00:12:47
+      Timestamp: 2018/01/16 20:12:23
+-------------- EPOCH   88/1001 --------------
+     Train loss: 0.00334280, accuracy: 100.00%
+Validation loss: 0.03197505, accuracy: 98.93%
+      Best loss: 0.02971248 at epoch 86
+   Elapsed time: 00:12:55
+      Timestamp: 2018/01/16 20:12:31
+-------------- EPOCH   89/1001 --------------
+     Train loss: 0.00203726, accuracy: 100.00%
+Validation loss: 0.02871788, accuracy: 98.98%
+      Best loss: 0.02971248 at epoch 86
+   Elapsed time: 00:13:04
+      Timestamp: 2018/01/16 20:12:39
+-------------- EPOCH   90/1001 --------------
+     Train loss: 0.00249890, accuracy: 100.00%
+Validation loss: 0.03095806, accuracy: 98.88%
+      Best loss: 0.02871788 at epoch 89
+   Elapsed time: 00:13:12
+      Timestamp: 2018/01/16 20:12:48
+-------------- EPOCH   91/1001 --------------
+     Train loss: 0.00265232, accuracy: 100.00%
+Validation loss: 0.03039969, accuracy: 99.04%
+      Best loss: 0.02871788 at epoch 89
+   Elapsed time: 00:13:21
+      Timestamp: 2018/01/16 20:12:56
+-------------- EPOCH   92/1001 --------------
+     Train loss: 0.00186995, accuracy: 100.00%
+Validation loss: 0.03023146, accuracy: 98.98%
+      Best loss: 0.02871788 at epoch 89
+   Elapsed time: 00:13:29
+      Timestamp: 2018/01/16 20:13:04
+-------------- EPOCH   93/1001 --------------
+     Train loss: 0.00282647, accuracy: 100.00%
+Validation loss: 0.03037950, accuracy: 99.09%
+      Best loss: 0.02871788 at epoch 89
+   Elapsed time: 00:13:37
+      Timestamp: 2018/01/16 20:13:12
+-------------- EPOCH   94/1001 --------------
+     Train loss: 0.00181625, accuracy: 100.00%
+Validation loss: 0.02776163, accuracy: 99.04%
+      Best loss: 0.02871788 at epoch 89
+   Elapsed time: 00:13:45
+      Timestamp: 2018/01/16 20:13:20
+-------------- EPOCH   95/1001 --------------
+     Train loss: 0.00200402, accuracy: 100.00%
+Validation loss: 0.02885269, accuracy: 98.98%
+      Best loss: 0.02776163 at epoch 94
+   Elapsed time: 00:13:53
+      Timestamp: 2018/01/16 20:13:29
+-------------- EPOCH   96/1001 --------------
+     Train loss: 0.00170961, accuracy: 100.00%
+Validation loss: 0.02869389, accuracy: 98.98%
+      Best loss: 0.02776163 at epoch 94
+   Elapsed time: 00:14:02
+      Timestamp: 2018/01/16 20:13:37
+-------------- EPOCH   97/1001 --------------
+     Train loss: 0.00156144, accuracy: 100.00%
+Validation loss: 0.02684706, accuracy: 99.19%
+      Best loss: 0.02776163 at epoch 94
+   Elapsed time: 00:14:10
+      Timestamp: 2018/01/16 20:13:45
+-------------- EPOCH   98/1001 --------------
+     Train loss: 0.00222516, accuracy: 100.00%
+Validation loss: 0.03037110, accuracy: 99.04%
+      Best loss: 0.02684706 at epoch 97
+   Elapsed time: 00:14:18
+      Timestamp: 2018/01/16 20:13:54
+-------------- EPOCH   99/1001 --------------
+     Train loss: 0.00127014, accuracy: 100.00%
+Validation loss: 0.02688561, accuracy: 99.19%
+      Best loss: 0.02684706 at epoch 97
+   Elapsed time: 00:14:26
+      Timestamp: 2018/01/16 20:14:02
+-------------- EPOCH  100/1001 --------------
+     Train loss: 0.00171233, accuracy: 100.00%
+Validation loss: 0.02833767, accuracy: 98.98%
+      Best loss: 0.02684706 at epoch 97
+   Elapsed time: 00:14:34
+      Timestamp: 2018/01/16 20:14:10
+-------------- EPOCH  101/1001 --------------
+     Train loss: 0.00128946, accuracy: 100.00%
+Validation loss: 0.02687809, accuracy: 99.09%
+      Best loss: 0.02684706 at epoch 97
+   Elapsed time: 00:14:42
+      Timestamp: 2018/01/16 20:14:18
+-------------- EPOCH  102/1001 --------------
+     Train loss: 0.00113632, accuracy: 100.00%
+Validation loss: 0.02693006, accuracy: 98.98%
+      Best loss: 0.02684706 at epoch 97
+   Elapsed time: 00:14:50
+      Timestamp: 2018/01/16 20:14:26
+-------------- EPOCH  103/1001 --------------
+     Train loss: 0.00216121, accuracy: 100.00%
+Validation loss: 0.03138648, accuracy: 98.98%
+      Best loss: 0.02684706 at epoch 97
+   Elapsed time: 00:14:58
+      Timestamp: 2018/01/16 20:14:34
+-------------- EPOCH  104/1001 --------------
+     Train loss: 0.00104119, accuracy: 100.00%
+Validation loss: 0.02692377, accuracy: 98.98%
+      Best loss: 0.02684706 at epoch 97
+   Elapsed time: 00:15:07
+      Timestamp: 2018/01/16 20:14:42
+-------------- EPOCH  105/1001 --------------
+     Train loss: 0.00135402, accuracy: 100.00%
+Validation loss: 0.03131683, accuracy: 98.98%
+      Best loss: 0.02684706 at epoch 97
+   Elapsed time: 00:15:15
+      Timestamp: 2018/01/16 20:14:50
+-------------- EPOCH  106/1001 --------------
+     Train loss: 0.00149283, accuracy: 100.00%
+Validation loss: 0.02956959, accuracy: 99.04%
+      Best loss: 0.02684706 at epoch 97
+   Elapsed time: 00:15:23
+      Timestamp: 2018/01/16 20:14:58
+-------------- EPOCH  107/1001 --------------
+     Train loss: 0.00098272, accuracy: 100.00%
+Validation loss: 0.02568814, accuracy: 99.09%
+      Best loss: 0.02684706 at epoch 97
+   Elapsed time: 00:15:31
+      Timestamp: 2018/01/16 20:15:07
+-------------- EPOCH  108/1001 --------------
+     Train loss: 0.00100682, accuracy: 100.00%
+Validation loss: 0.02718155, accuracy: 98.98%
+      Best loss: 0.02568814 at epoch 107
+   Elapsed time: 00:15:40
+      Timestamp: 2018/01/16 20:15:16
+-------------- EPOCH  109/1001 --------------
+     Train loss: 0.00087071, accuracy: 100.00%
+Validation loss: 0.02561264, accuracy: 99.09%
+      Best loss: 0.02568814 at epoch 107
+   Elapsed time: 00:15:48
+      Timestamp: 2018/01/16 20:15:24
+-------------- EPOCH  110/1001 --------------
+     Train loss: 0.00109690, accuracy: 100.00%
+Validation loss: 0.02806480, accuracy: 99.04%
+      Best loss: 0.02561264 at epoch 109
+   Elapsed time: 00:15:57
+      Timestamp: 2018/01/16 20:15:33
+-------------- EPOCH  111/1001 --------------
+     Train loss: 0.00076674, accuracy: 100.00%
+Validation loss: 0.02550903, accuracy: 99.24%
+      Best loss: 0.02561264 at epoch 109
+   Elapsed time: 00:16:06
+      Timestamp: 2018/01/16 20:15:41
+-------------- EPOCH  112/1001 --------------
+     Train loss: 0.00079156, accuracy: 100.00%
+Validation loss: 0.02648082, accuracy: 99.19%
+      Best loss: 0.02550903 at epoch 111
+   Elapsed time: 00:16:15
+      Timestamp: 2018/01/16 20:15:50
+-------------- EPOCH  113/1001 --------------
+     Train loss: 0.00074265, accuracy: 100.00%
+Validation loss: 0.02553969, accuracy: 99.34%
+      Best loss: 0.02550903 at epoch 111
+   Elapsed time: 00:16:23
+      Timestamp: 2018/01/16 20:15:58
+-------------- EPOCH  114/1001 --------------
+     Train loss: 0.00101537, accuracy: 100.00%
+Validation loss: 0.02657641, accuracy: 99.19%
+      Best loss: 0.02550903 at epoch 111
+   Elapsed time: 00:16:31
+      Timestamp: 2018/01/16 20:16:06
+-------------- EPOCH  115/1001 --------------
+     Train loss: 0.00084803, accuracy: 100.00%
+Validation loss: 0.02718947, accuracy: 99.14%
+      Best loss: 0.02550903 at epoch 111
+   Elapsed time: 00:16:39
+      Timestamp: 2018/01/16 20:16:14
+-------------- EPOCH  116/1001 --------------
+     Train loss: 0.00064768, accuracy: 100.00%
+Validation loss: 0.02556445, accuracy: 99.09%
+      Best loss: 0.02550903 at epoch 111
+   Elapsed time: 00:16:47
+      Timestamp: 2018/01/16 20:16:23
+-------------- EPOCH  117/1001 --------------
+     Train loss: 0.00149667, accuracy: 100.00%
+Validation loss: 0.03089487, accuracy: 98.98%
+      Best loss: 0.02550903 at epoch 111
+   Elapsed time: 00:16:55
+      Timestamp: 2018/01/16 20:16:31
+-------------- EPOCH  118/1001 --------------
+     Train loss: 0.00170968, accuracy: 100.00%
+Validation loss: 0.02933188, accuracy: 99.19%
+      Best loss: 0.02550903 at epoch 111
+   Elapsed time: 00:17:03
+      Timestamp: 2018/01/16 20:16:39
+-------------- EPOCH  119/1001 --------------
+     Train loss: 0.00115335, accuracy: 100.00%
+Validation loss: 0.02818618, accuracy: 99.14%
+      Best loss: 0.02550903 at epoch 111
+   Elapsed time: 00:17:12
+      Timestamp: 2018/01/16 20:16:47
+-------------- EPOCH  120/1001 --------------
+     Train loss: 0.00074114, accuracy: 100.00%
+Validation loss: 0.02570861, accuracy: 99.19%
+      Best loss: 0.02550903 at epoch 111
+   Elapsed time: 00:17:20
+      Timestamp: 2018/01/16 20:16:55
+-------------- EPOCH  121/1001 --------------
+     Train loss: 0.00065136, accuracy: 100.00%
+Validation loss: 0.02420706, accuracy: 99.19%
+      Best loss: 0.02550903 at epoch 111
+   Elapsed time: 00:17:28
+      Timestamp: 2018/01/16 20:17:03
+-------------- EPOCH  122/1001 --------------
+     Train loss: 0.00069471, accuracy: 100.00%
+Validation loss: 0.02577959, accuracy: 99.24%
+      Best loss: 0.02420706 at epoch 121
+   Elapsed time: 00:17:36
+      Timestamp: 2018/01/16 20:17:12
+-------------- EPOCH  123/1001 --------------
+     Train loss: 0.00055472, accuracy: 100.00%
+Validation loss: 0.02467800, accuracy: 99.24%
+      Best loss: 0.02420706 at epoch 121
+   Elapsed time: 00:17:44
+      Timestamp: 2018/01/16 20:17:20
+-------------- EPOCH  124/1001 --------------
+     Train loss: 0.00048062, accuracy: 100.00%
+Validation loss: 0.02445601, accuracy: 99.19%
+      Best loss: 0.02420706 at epoch 121
+   Elapsed time: 00:17:52
+      Timestamp: 2018/01/16 20:17:28
+-------------- EPOCH  125/1001 --------------
+     Train loss: 0.00049122, accuracy: 100.00%
+Validation loss: 0.02581797, accuracy: 99.24%
+      Best loss: 0.02420706 at epoch 121
+   Elapsed time: 00:18:00
+      Timestamp: 2018/01/16 20:17:36
+-------------- EPOCH  126/1001 --------------
+     Train loss: 0.00076421, accuracy: 100.00%
+Validation loss: 0.02752409, accuracy: 99.04%
+      Best loss: 0.02420706 at epoch 121
+   Elapsed time: 00:18:09
+      Timestamp: 2018/01/16 20:17:44
+-------------- EPOCH  127/1001 --------------
+     Train loss: 0.00162254, accuracy: 100.00%
+Validation loss: 0.02838604, accuracy: 99.09%
+      Best loss: 0.02420706 at epoch 121
+   Elapsed time: 00:18:17
+      Timestamp: 2018/01/16 20:17:52
+-------------- EPOCH  128/1001 --------------
+     Train loss: 0.00089513, accuracy: 100.00%
+Validation loss: 0.02425237, accuracy: 99.39%
+      Best loss: 0.02420706 at epoch 121
+   Elapsed time: 00:18:25
+      Timestamp: 2018/01/16 20:18:00
+-------------- EPOCH  129/1001 --------------
+     Train loss: 0.00080440, accuracy: 100.00%
+Validation loss: 0.02678346, accuracy: 99.19%
+      Best loss: 0.02420706 at epoch 121
+   Elapsed time: 00:18:33
+      Timestamp: 2018/01/16 20:18:08
+-------------- EPOCH  130/1001 --------------
+     Train loss: 0.00052649, accuracy: 100.00%
+Validation loss: 0.02323433, accuracy: 99.39%
+      Best loss: 0.02420706 at epoch 121
+   Elapsed time: 00:18:41
+      Timestamp: 2018/01/16 20:18:16
+-------------- EPOCH  131/1001 --------------
+     Train loss: 0.00072259, accuracy: 100.00%
+Validation loss: 0.02511641, accuracy: 99.14%
+      Best loss: 0.02323433 at epoch 130
+   Elapsed time: 00:18:49
+      Timestamp: 2018/01/16 20:18:25
+-------------- EPOCH  132/1001 --------------
+     Train loss: 0.00048798, accuracy: 100.00%
+Validation loss: 0.02330728, accuracy: 99.19%
+      Best loss: 0.02323433 at epoch 130
+   Elapsed time: 00:18:57
+      Timestamp: 2018/01/16 20:18:33
+-------------- EPOCH  133/1001 --------------
+     Train loss: 0.00049233, accuracy: 100.00%
+Validation loss: 0.02335013, accuracy: 99.24%
+      Best loss: 0.02323433 at epoch 130
+   Elapsed time: 00:19:05
+      Timestamp: 2018/01/16 20:18:41
+-------------- EPOCH  134/1001 --------------
+     Train loss: 0.00042748, accuracy: 100.00%
+Validation loss: 0.02304517, accuracy: 99.34%
+      Best loss: 0.02323433 at epoch 130
+   Elapsed time: 00:19:13
+      Timestamp: 2018/01/16 20:18:49
+-------------- EPOCH  135/1001 --------------
+     Train loss: 0.00043261, accuracy: 100.00%
+Validation loss: 0.02302448, accuracy: 99.34%
+      Best loss: 0.02304517 at epoch 134
+   Elapsed time: 00:19:22
+      Timestamp: 2018/01/16 20:18:57
+-------------- EPOCH  136/1001 --------------
+     Train loss: 0.00038414, accuracy: 100.00%
+Validation loss: 0.02275114, accuracy: 99.19%
+      Best loss: 0.02302448 at epoch 135
+   Elapsed time: 00:19:30
+      Timestamp: 2018/01/16 20:19:06
+-------------- EPOCH  137/1001 --------------
+     Train loss: 0.00044749, accuracy: 100.00%
+Validation loss: 0.02563279, accuracy: 99.14%
+      Best loss: 0.02275114 at epoch 136
+   Elapsed time: 00:19:39
+      Timestamp: 2018/01/16 20:19:14
+-------------- EPOCH  138/1001 --------------
+     Train loss: 0.00032463, accuracy: 100.00%
+Validation loss: 0.02258439, accuracy: 99.39%
+      Best loss: 0.02275114 at epoch 136
+   Elapsed time: 00:19:47
+      Timestamp: 2018/01/16 20:19:22
+-------------- EPOCH  139/1001 --------------
+     Train loss: 0.00032437, accuracy: 100.00%
+Validation loss: 0.02281069, accuracy: 99.24%
+      Best loss: 0.02258439 at epoch 138
+   Elapsed time: 00:19:55
+      Timestamp: 2018/01/16 20:19:31
+-------------- EPOCH  140/1001 --------------
+     Train loss: 0.00042279, accuracy: 100.00%
+Validation loss: 0.02501353, accuracy: 99.19%
+      Best loss: 0.02258439 at epoch 138
+   Elapsed time: 00:20:03
+      Timestamp: 2018/01/16 20:19:39
+-------------- EPOCH  141/1001 --------------
+     Train loss: 0.00053937, accuracy: 100.00%
+Validation loss: 0.02642784, accuracy: 99.24%
+      Best loss: 0.02258439 at epoch 138
+   Elapsed time: 00:20:11
+      Timestamp: 2018/01/16 20:19:47
+-------------- EPOCH  142/1001 --------------
+     Train loss: 0.00040776, accuracy: 100.00%
+Validation loss: 0.02433846, accuracy: 99.34%
+      Best loss: 0.02258439 at epoch 138
+   Elapsed time: 00:20:19
+      Timestamp: 2018/01/16 20:19:55
+-------------- EPOCH  143/1001 --------------
+     Train loss: 0.00031794, accuracy: 100.00%
+Validation loss: 0.02239512, accuracy: 99.24%
+      Best loss: 0.02258439 at epoch 138
+   Elapsed time: 00:20:27
+      Timestamp: 2018/01/16 20:20:03
+-------------- EPOCH  144/1001 --------------
+     Train loss: 0.00030617, accuracy: 100.00%
+Validation loss: 0.02252096, accuracy: 99.29%
+      Best loss: 0.02239512 at epoch 143
+   Elapsed time: 00:20:36
+      Timestamp: 2018/01/16 20:20:11
+-------------- EPOCH  145/1001 --------------
+     Train loss: 0.00035047, accuracy: 100.00%
+Validation loss: 0.02306283, accuracy: 99.39%
+      Best loss: 0.02239512 at epoch 143
+   Elapsed time: 00:20:44
+      Timestamp: 2018/01/16 20:20:19
+-------------- EPOCH  146/1001 --------------
+     Train loss: 0.00026525, accuracy: 100.00%
+Validation loss: 0.02264464, accuracy: 99.14%
+      Best loss: 0.02239512 at epoch 143
+   Elapsed time: 00:20:52
+      Timestamp: 2018/01/16 20:20:27
+-------------- EPOCH  147/1001 --------------
+     Train loss: 0.00033031, accuracy: 100.00%
+Validation loss: 0.02367470, accuracy: 99.29%
+      Best loss: 0.02239512 at epoch 143
+   Elapsed time: 00:21:00
+      Timestamp: 2018/01/16 20:20:36
+-------------- EPOCH  148/1001 --------------
+     Train loss: 0.00029164, accuracy: 100.00%
+Validation loss: 0.02307402, accuracy: 99.29%
+      Best loss: 0.02239512 at epoch 143
+   Elapsed time: 00:21:08
+      Timestamp: 2018/01/16 20:20:44
+-------------- EPOCH  149/1001 --------------
+     Train loss: 0.00034976, accuracy: 100.00%
+Validation loss: 0.02527084, accuracy: 99.14%
+      Best loss: 0.02239512 at epoch 143
+   Elapsed time: 00:21:16
+      Timestamp: 2018/01/16 20:20:52
+-------------- EPOCH  150/1001 --------------
+     Train loss: 0.00033512, accuracy: 100.00%
+Validation loss: 0.02205246, accuracy: 99.49%
+      Best loss: 0.02239512 at epoch 143
+   Elapsed time: 00:21:24
+      Timestamp: 2018/01/16 20:21:00
+-------------- EPOCH  151/1001 --------------
+     Train loss: 0.00030526, accuracy: 100.00%
+Validation loss: 0.02354957, accuracy: 99.34%
+      Best loss: 0.02205246 at epoch 150
+   Elapsed time: 00:21:33
+      Timestamp: 2018/01/16 20:21:08
+-------------- EPOCH  152/1001 --------------
+     Train loss: 0.00053300, accuracy: 100.00%
+Validation loss: 0.02475752, accuracy: 99.34%
+      Best loss: 0.02205246 at epoch 150
+   Elapsed time: 00:21:41
+      Timestamp: 2018/01/16 20:21:16
+-------------- EPOCH  153/1001 --------------
+     Train loss: 0.00120659, accuracy: 100.00%
+Validation loss: 0.02725516, accuracy: 99.19%
+      Best loss: 0.02205246 at epoch 150
+   Elapsed time: 00:21:49
+      Timestamp: 2018/01/16 20:21:24
+-------------- EPOCH  154/1001 --------------
+     Train loss: 0.00066124, accuracy: 100.00%
+Validation loss: 0.02460419, accuracy: 99.24%
+      Best loss: 0.02205246 at epoch 150
+   Elapsed time: 00:21:57
+      Timestamp: 2018/01/16 20:21:32
+-------------- EPOCH  155/1001 --------------
+     Train loss: 0.00049007, accuracy: 100.00%
+Validation loss: 0.02509211, accuracy: 99.34%
+      Best loss: 0.02205246 at epoch 150
+   Elapsed time: 00:22:05
+      Timestamp: 2018/01/16 20:21:40
+-------------- EPOCH  156/1001 --------------
+     Train loss: 0.00047764, accuracy: 100.00%
+Validation loss: 0.02678574, accuracy: 99.19%
+      Best loss: 0.02205246 at epoch 150
+   Elapsed time: 00:22:13
+      Timestamp: 2018/01/16 20:21:49
+-------------- EPOCH  157/1001 --------------
+     Train loss: 0.00027904, accuracy: 100.00%
+Validation loss: 0.02390103, accuracy: 99.09%
+      Best loss: 0.02205246 at epoch 150
+   Elapsed time: 00:22:23
+      Timestamp: 2018/01/16 20:21:58
+-------------- EPOCH  158/1001 --------------
+     Train loss: 0.00026211, accuracy: 100.00%
+Validation loss: 0.02351840, accuracy: 99.14%
+      Best loss: 0.02205246 at epoch 150
+   Elapsed time: 00:22:31
+      Timestamp: 2018/01/16 20:22:06
+-------------- EPOCH  159/1001 --------------
+     Train loss: 0.00026868, accuracy: 100.00%
+Validation loss: 0.02294959, accuracy: 99.29%
+      Best loss: 0.02205246 at epoch 150
+   Elapsed time: 00:22:39
+      Timestamp: 2018/01/16 20:22:14
+-------------- EPOCH  160/1001 --------------
+     Train loss: 0.00022895, accuracy: 100.00%
+Validation loss: 0.02418982, accuracy: 99.19%
+      Best loss: 0.02205246 at epoch 150
+   Elapsed time: 00:22:47
+      Timestamp: 2018/01/16 20:22:22
+-------------- EPOCH  161/1001 --------------
+     Train loss: 0.00022883, accuracy: 100.00%
+Validation loss: 0.02335125, accuracy: 99.29%
+      Best loss: 0.02205246 at epoch 150
+   Elapsed time: 00:22:55
+      Timestamp: 2018/01/16 20:22:30
+-------------- EPOCH  162/1001 --------------
+     Train loss: 0.00018222, accuracy: 100.00%
+Validation loss: 0.02140935, accuracy: 99.44%
+      Best loss: 0.02205246 at epoch 150
+   Elapsed time: 00:23:03
+      Timestamp: 2018/01/16 20:22:38
+-------------- EPOCH  163/1001 --------------
+     Train loss: 0.00021219, accuracy: 100.00%
+Validation loss: 0.02346657, accuracy: 99.29%
+      Best loss: 0.02140935 at epoch 162
+   Elapsed time: 00:23:11
+      Timestamp: 2018/01/16 20:22:47
+-------------- EPOCH  164/1001 --------------
+     Train loss: 0.00021268, accuracy: 100.00%
+Validation loss: 0.02308344, accuracy: 99.19%
+      Best loss: 0.02140935 at epoch 162
+   Elapsed time: 00:23:19
+      Timestamp: 2018/01/16 20:22:55
+-------------- EPOCH  165/1001 --------------
+     Train loss: 0.00022309, accuracy: 100.00%
+Validation loss: 0.02372671, accuracy: 99.19%
+      Best loss: 0.02140935 at epoch 162
+   Elapsed time: 00:23:27
+      Timestamp: 2018/01/16 20:23:03
+-------------- EPOCH  166/1001 --------------
+     Train loss: 0.00018502, accuracy: 100.00%
+Validation loss: 0.02159290, accuracy: 99.34%
+      Best loss: 0.02140935 at epoch 162
+   Elapsed time: 00:23:35
+      Timestamp: 2018/01/16 20:23:11
+-------------- EPOCH  167/1001 --------------
+     Train loss: 0.00022341, accuracy: 100.00%
+Validation loss: 0.02447955, accuracy: 99.24%
+      Best loss: 0.02140935 at epoch 162
+   Elapsed time: 00:23:43
+      Timestamp: 2018/01/16 20:23:19
+-------------- EPOCH  168/1001 --------------
+     Train loss: 0.00018939, accuracy: 100.00%
+Validation loss: 0.02200692, accuracy: 99.29%
+      Best loss: 0.02140935 at epoch 162
+   Elapsed time: 00:23:52
+      Timestamp: 2018/01/16 20:23:27
+-------------- EPOCH  169/1001 --------------
+     Train loss: 0.00019484, accuracy: 100.00%
+Validation loss: 0.02415140, accuracy: 99.09%
+      Best loss: 0.02140935 at epoch 162
+   Elapsed time: 00:24:00
+      Timestamp: 2018/01/16 20:23:35
+-------------- EPOCH  170/1001 --------------
+     Train loss: 0.00021382, accuracy: 100.00%
+Validation loss: 0.02241054, accuracy: 99.19%
+      Best loss: 0.02140935 at epoch 162
+   Elapsed time: 00:24:08
+      Timestamp: 2018/01/16 20:23:43
+-------------- EPOCH  171/1001 --------------
+     Train loss: 0.00019342, accuracy: 100.00%
+Validation loss: 0.02447423, accuracy: 99.09%
+      Best loss: 0.02140935 at epoch 162
+   Elapsed time: 00:24:16
+      Timestamp: 2018/01/16 20:23:51
+-------------- EPOCH  172/1001 --------------
+     Train loss: 0.00030355, accuracy: 100.00%
+Validation loss: 0.02478266, accuracy: 99.14%
+      Best loss: 0.02140935 at epoch 162
+   Elapsed time: 00:24:24
+      Timestamp: 2018/01/16 20:23:59
+-------------- EPOCH  173/1001 --------------
+     Train loss: 0.00018267, accuracy: 100.00%
+Validation loss: 0.02083884, accuracy: 99.34%
+      Best loss: 0.02140935 at epoch 162
+   Elapsed time: 00:24:32
+      Timestamp: 2018/01/16 20:24:07
+-------------- EPOCH  174/1001 --------------
+     Train loss: 0.00020711, accuracy: 100.00%
+Validation loss: 0.02210563, accuracy: 99.29%
+      Best loss: 0.02083884 at epoch 173
+   Elapsed time: 00:24:40
+      Timestamp: 2018/01/16 20:24:16
+-------------- EPOCH  175/1001 --------------
+     Train loss: 0.00024635, accuracy: 100.00%
+Validation loss: 0.02507407, accuracy: 99.19%
+      Best loss: 0.02083884 at epoch 173
+   Elapsed time: 00:24:48
+      Timestamp: 2018/01/16 20:24:24
+-------------- EPOCH  176/1001 --------------
+     Train loss: 0.00015893, accuracy: 100.00%
+Validation loss: 0.02059196, accuracy: 99.44%
+      Best loss: 0.02083884 at epoch 173
+   Elapsed time: 00:24:56
+      Timestamp: 2018/01/16 20:24:32
+-------------- EPOCH  177/1001 --------------
+     Train loss: 0.00027489, accuracy: 100.00%
+Validation loss: 0.02488948, accuracy: 99.29%
+      Best loss: 0.02059196 at epoch 176
+   Elapsed time: 00:25:05
+      Timestamp: 2018/01/16 20:24:40
+-------------- EPOCH  178/1001 --------------
+     Train loss: 0.00021977, accuracy: 100.00%
+Validation loss: 0.02209075, accuracy: 99.44%
+      Best loss: 0.02059196 at epoch 176
+   Elapsed time: 00:25:13
+      Timestamp: 2018/01/16 20:24:48
+-------------- EPOCH  179/1001 --------------
+     Train loss: 0.00024540, accuracy: 100.00%
+Validation loss: 0.02310387, accuracy: 99.29%
+      Best loss: 0.02059196 at epoch 176
+   Elapsed time: 00:25:21
+      Timestamp: 2018/01/16 20:24:56
+-------------- EPOCH  180/1001 --------------
+     Train loss: 0.00018711, accuracy: 100.00%
+Validation loss: 0.02198445, accuracy: 99.34%
+      Best loss: 0.02059196 at epoch 176
+   Elapsed time: 00:25:29
+      Timestamp: 2018/01/16 20:25:04
+-------------- EPOCH  181/1001 --------------
+     Train loss: 0.00019565, accuracy: 100.00%
+Validation loss: 0.02159794, accuracy: 99.29%
+      Best loss: 0.02059196 at epoch 176
+   Elapsed time: 00:25:37
+      Timestamp: 2018/01/16 20:25:13
+-------------- EPOCH  182/1001 --------------
+     Train loss: 0.00017114, accuracy: 100.00%
+Validation loss: 0.02011657, accuracy: 99.49%
+      Best loss: 0.02059196 at epoch 176
+   Elapsed time: 00:25:45
+      Timestamp: 2018/01/16 20:25:21
+-------------- EPOCH  183/1001 --------------
+     Train loss: 0.00017505, accuracy: 100.00%
+Validation loss: 0.02188677, accuracy: 99.29%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:25:54
+      Timestamp: 2018/01/16 20:25:29
+-------------- EPOCH  184/1001 --------------
+     Train loss: 0.00016998, accuracy: 100.00%
+Validation loss: 0.02060275, accuracy: 99.44%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:26:02
+      Timestamp: 2018/01/16 20:25:37
+-------------- EPOCH  185/1001 --------------
+     Train loss: 0.00012880, accuracy: 100.00%
+Validation loss: 0.02026981, accuracy: 99.49%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:26:10
+      Timestamp: 2018/01/16 20:25:45
+-------------- EPOCH  186/1001 --------------
+     Train loss: 0.00012457, accuracy: 100.00%
+Validation loss: 0.02021031, accuracy: 99.44%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:26:18
+      Timestamp: 2018/01/16 20:25:53
+-------------- EPOCH  187/1001 --------------
+     Train loss: 0.00012981, accuracy: 100.00%
+Validation loss: 0.02130642, accuracy: 99.34%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:26:26
+      Timestamp: 2018/01/16 20:26:01
+-------------- EPOCH  188/1001 --------------
+     Train loss: 0.00019109, accuracy: 100.00%
+Validation loss: 0.02333935, accuracy: 99.29%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:26:34
+      Timestamp: 2018/01/16 20:26:09
+-------------- EPOCH  189/1001 --------------
+     Train loss: 0.00011813, accuracy: 100.00%
+Validation loss: 0.02101950, accuracy: 99.44%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:26:42
+      Timestamp: 2018/01/16 20:26:17
+-------------- EPOCH  190/1001 --------------
+     Train loss: 0.00014465, accuracy: 100.00%
+Validation loss: 0.02222242, accuracy: 99.34%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:26:50
+      Timestamp: 2018/01/16 20:26:25
+-------------- EPOCH  191/1001 --------------
+     Train loss: 0.00012634, accuracy: 100.00%
+Validation loss: 0.02030809, accuracy: 99.39%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:26:58
+      Timestamp: 2018/01/16 20:26:33
+-------------- EPOCH  192/1001 --------------
+     Train loss: 0.00011708, accuracy: 100.00%
+Validation loss: 0.02087687, accuracy: 99.44%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:27:06
+      Timestamp: 2018/01/16 20:26:41
+-------------- EPOCH  193/1001 --------------
+     Train loss: 0.00012809, accuracy: 100.00%
+Validation loss: 0.02164740, accuracy: 99.29%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:27:14
+      Timestamp: 2018/01/16 20:26:50
+-------------- EPOCH  194/1001 --------------
+     Train loss: 0.00010414, accuracy: 100.00%
+Validation loss: 0.02028027, accuracy: 99.44%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:27:22
+      Timestamp: 2018/01/16 20:26:58
+-------------- EPOCH  195/1001 --------------
+     Train loss: 0.00012241, accuracy: 100.00%
+Validation loss: 0.02071609, accuracy: 99.39%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:27:30
+      Timestamp: 2018/01/16 20:27:06
+-------------- EPOCH  196/1001 --------------
+     Train loss: 0.00008960, accuracy: 100.00%
+Validation loss: 0.02014556, accuracy: 99.49%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:27:38
+      Timestamp: 2018/01/16 20:27:14
+-------------- EPOCH  197/1001 --------------
+     Train loss: 0.00011705, accuracy: 100.00%
+Validation loss: 0.02186590, accuracy: 99.34%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:27:46
+      Timestamp: 2018/01/16 20:27:22
+-------------- EPOCH  198/1001 --------------
+     Train loss: 0.00016999, accuracy: 100.00%
+Validation loss: 0.02286968, accuracy: 99.34%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:27:54
+      Timestamp: 2018/01/16 20:27:30
+-------------- EPOCH  199/1001 --------------
+     Train loss: 0.00027937, accuracy: 100.00%
+Validation loss: 0.02321496, accuracy: 99.39%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:28:02
+      Timestamp: 2018/01/16 20:27:38
+-------------- EPOCH  200/1001 --------------
+     Train loss: 0.00013478, accuracy: 100.00%
+Validation loss: 0.01893489, accuracy: 99.49%
+      Best loss: 0.02011657 at epoch 182
+   Elapsed time: 00:28:10
+      Timestamp: 2018/01/16 20:27:46
+-------------- EPOCH  201/1001 --------------
+     Train loss: 0.00009304, accuracy: 100.00%
+Validation loss: 0.01964780, accuracy: 99.54%
+      Best loss: 0.01893489 at epoch 200
+   Elapsed time: 00:28:19
+      Timestamp: 2018/01/16 20:27:54
+-------------- EPOCH  202/1001 --------------
+     Train loss: 0.00011059, accuracy: 100.00%
+Validation loss: 0.02179848, accuracy: 99.29%
+      Best loss: 0.01893489 at epoch 200
+   Elapsed time: 00:28:27
+      Timestamp: 2018/01/16 20:28:02
+-------------- EPOCH  203/1001 --------------
+     Train loss: 0.00010946, accuracy: 100.00%
+Validation loss: 0.01956410, accuracy: 99.49%
+      Best loss: 0.01893489 at epoch 200
+   Elapsed time: 00:28:35
+      Timestamp: 2018/01/16 20:28:10
+-------------- EPOCH  204/1001 --------------
+     Train loss: 0.00012590, accuracy: 100.00%
+Validation loss: 0.01915130, accuracy: 99.49%
+      Best loss: 0.01893489 at epoch 200
+   Elapsed time: 00:28:43
+      Timestamp: 2018/01/16 20:28:18
+-------------- EPOCH  205/1001 --------------
+     Train loss: 0.00013568, accuracy: 100.00%
+Validation loss: 0.01892969, accuracy: 99.49%
+      Best loss: 0.01893489 at epoch 200
+   Elapsed time: 00:28:51
+      Timestamp: 2018/01/16 20:28:26
+-------------- EPOCH  206/1001 --------------
+     Train loss: 0.00012162, accuracy: 100.00%
+Validation loss: 0.02032080, accuracy: 99.29%
+      Best loss: 0.01892969 at epoch 205
+   Elapsed time: 00:28:59
+      Timestamp: 2018/01/16 20:28:35
+-------------- EPOCH  207/1001 --------------
+     Train loss: 0.00011677, accuracy: 100.00%
+Validation loss: 0.01877152, accuracy: 99.44%
+      Best loss: 0.01892969 at epoch 205
+   Elapsed time: 00:29:08
+      Timestamp: 2018/01/16 20:28:43
+-------------- EPOCH  208/1001 --------------
+     Train loss: 0.00011617, accuracy: 100.00%
+Validation loss: 0.01914061, accuracy: 99.44%
+      Best loss: 0.01877152 at epoch 207
+   Elapsed time: 00:29:18
+      Timestamp: 2018/01/16 20:28:54
+-------------- EPOCH  209/1001 --------------
+     Train loss: 0.00010213, accuracy: 100.00%
+Validation loss: 0.01930468, accuracy: 99.44%
+      Best loss: 0.01877152 at epoch 207
+   Elapsed time: 00:29:26
+      Timestamp: 2018/01/16 20:29:02
+-------------- EPOCH  210/1001 --------------
+     Train loss: 0.00009834, accuracy: 100.00%
+Validation loss: 0.01842959, accuracy: 99.44%
+      Best loss: 0.01877152 at epoch 207
+   Elapsed time: 00:29:34
+      Timestamp: 2018/01/16 20:29:10
+-------------- EPOCH  211/1001 --------------
+     Train loss: 0.00009375, accuracy: 100.00%
+Validation loss: 0.01958502, accuracy: 99.49%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:29:43
+      Timestamp: 2018/01/16 20:29:19
+-------------- EPOCH  212/1001 --------------
+     Train loss: 0.00010084, accuracy: 100.00%
+Validation loss: 0.01930169, accuracy: 99.59%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:29:51
+      Timestamp: 2018/01/16 20:29:27
+-------------- EPOCH  213/1001 --------------
+     Train loss: 0.00012832, accuracy: 100.00%
+Validation loss: 0.02243742, accuracy: 99.19%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:29:59
+      Timestamp: 2018/01/16 20:29:35
+-------------- EPOCH  214/1001 --------------
+     Train loss: 0.00010986, accuracy: 100.00%
+Validation loss: 0.01920416, accuracy: 99.49%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:30:07
+      Timestamp: 2018/01/16 20:29:43
+-------------- EPOCH  215/1001 --------------
+     Train loss: 0.00012072, accuracy: 100.00%
+Validation loss: 0.01983228, accuracy: 99.49%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:30:15
+      Timestamp: 2018/01/16 20:29:51
+-------------- EPOCH  216/1001 --------------
+     Train loss: 0.00009853, accuracy: 100.00%
+Validation loss: 0.01955577, accuracy: 99.39%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:30:24
+      Timestamp: 2018/01/16 20:29:59
+-------------- EPOCH  217/1001 --------------
+     Train loss: 0.00012537, accuracy: 100.00%
+Validation loss: 0.02184173, accuracy: 99.34%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:30:32
+      Timestamp: 2018/01/16 20:30:08
+-------------- EPOCH  218/1001 --------------
+     Train loss: 0.00008849, accuracy: 100.00%
+Validation loss: 0.01919404, accuracy: 99.34%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:30:40
+      Timestamp: 2018/01/16 20:30:16
+-------------- EPOCH  219/1001 --------------
+     Train loss: 0.00013254, accuracy: 100.00%
+Validation loss: 0.02031906, accuracy: 99.39%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:30:49
+      Timestamp: 2018/01/16 20:30:24
+-------------- EPOCH  220/1001 --------------
+     Train loss: 0.00011617, accuracy: 100.00%
+Validation loss: 0.02079090, accuracy: 99.34%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:30:57
+      Timestamp: 2018/01/16 20:30:32
+-------------- EPOCH  221/1001 --------------
+     Train loss: 0.00008048, accuracy: 100.00%
+Validation loss: 0.01889113, accuracy: 99.44%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:31:05
+      Timestamp: 2018/01/16 20:30:40
+-------------- EPOCH  222/1001 --------------
+     Train loss: 0.00017648, accuracy: 100.00%
+Validation loss: 0.02417351, accuracy: 99.19%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:31:13
+      Timestamp: 2018/01/16 20:30:48
+-------------- EPOCH  223/1001 --------------
+     Train loss: 0.00008900, accuracy: 100.00%
+Validation loss: 0.02057644, accuracy: 99.49%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:31:21
+      Timestamp: 2018/01/16 20:30:57
+-------------- EPOCH  224/1001 --------------
+     Train loss: 0.00010339, accuracy: 100.00%
+Validation loss: 0.02104843, accuracy: 99.49%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:31:30
+      Timestamp: 2018/01/16 20:31:05
+-------------- EPOCH  225/1001 --------------
+     Train loss: 0.00009025, accuracy: 100.00%
+Validation loss: 0.02128317, accuracy: 99.39%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:31:38
+      Timestamp: 2018/01/16 20:31:14
+-------------- EPOCH  226/1001 --------------
+     Train loss: 0.00007248, accuracy: 100.00%
+Validation loss: 0.01995696, accuracy: 99.49%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:31:47
+      Timestamp: 2018/01/16 20:31:22
+-------------- EPOCH  227/1001 --------------
+     Train loss: 0.00049885, accuracy: 100.00%
+Validation loss: 0.03113485, accuracy: 99.24%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:31:55
+      Timestamp: 2018/01/16 20:31:30
+-------------- EPOCH  228/1001 --------------
+     Train loss: 0.00010436, accuracy: 100.00%
+Validation loss: 0.02075098, accuracy: 99.34%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:32:03
+      Timestamp: 2018/01/16 20:31:38
+-------------- EPOCH  229/1001 --------------
+     Train loss: 0.00007991, accuracy: 100.00%
+Validation loss: 0.01849133, accuracy: 99.64%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:32:11
+      Timestamp: 2018/01/16 20:31:46
+-------------- EPOCH  230/1001 --------------
+     Train loss: 0.00011023, accuracy: 100.00%
+Validation loss: 0.02206076, accuracy: 99.29%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:32:19
+      Timestamp: 2018/01/16 20:31:55
+-------------- EPOCH  231/1001 --------------
+     Train loss: 0.00014610, accuracy: 100.00%
+Validation loss: 0.02175848, accuracy: 99.39%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:32:28
+      Timestamp: 2018/01/16 20:32:03
+-------------- EPOCH  232/1001 --------------
+     Train loss: 0.00009226, accuracy: 100.00%
+Validation loss: 0.02082269, accuracy: 99.24%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:32:36
+      Timestamp: 2018/01/16 20:32:12
+-------------- EPOCH  233/1001 --------------
+     Train loss: 0.00008689, accuracy: 100.00%
+Validation loss: 0.02192769, accuracy: 99.24%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:32:45
+      Timestamp: 2018/01/16 20:32:20
+-------------- EPOCH  234/1001 --------------
+     Train loss: 0.00008050, accuracy: 100.00%
+Validation loss: 0.01948834, accuracy: 99.49%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:32:53
+      Timestamp: 2018/01/16 20:32:29
+-------------- EPOCH  235/1001 --------------
+     Train loss: 0.00009006, accuracy: 100.00%
+Validation loss: 0.02042928, accuracy: 99.49%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:33:01
+      Timestamp: 2018/01/16 20:32:37
+-------------- EPOCH  236/1001 --------------
+     Train loss: 0.00010028, accuracy: 100.00%
+Validation loss: 0.02119020, accuracy: 99.39%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:33:09
+      Timestamp: 2018/01/16 20:32:45
+-------------- EPOCH  237/1001 --------------
+     Train loss: 0.00008448, accuracy: 100.00%
+Validation loss: 0.01880185, accuracy: 99.49%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:33:17
+      Timestamp: 2018/01/16 20:32:53
+-------------- EPOCH  238/1001 --------------
+     Train loss: 0.00008134, accuracy: 100.00%
+Validation loss: 0.01939808, accuracy: 99.39%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:33:26
+      Timestamp: 2018/01/16 20:33:02
+-------------- EPOCH  239/1001 --------------
+     Train loss: 0.00024135, accuracy: 100.00%
+Validation loss: 0.02450569, accuracy: 99.24%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:33:35
+      Timestamp: 2018/01/16 20:33:10
+-------------- EPOCH  240/1001 --------------
+     Train loss: 0.00012334, accuracy: 100.00%
+Validation loss: 0.01981650, accuracy: 99.34%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:33:43
+      Timestamp: 2018/01/16 20:33:19
+-------------- EPOCH  241/1001 --------------
+     Train loss: 0.00015078, accuracy: 100.00%
+Validation loss: 0.01817317, accuracy: 99.44%
+      Best loss: 0.01842959 at epoch 210
+   Elapsed time: 00:33:52
+      Timestamp: 2018/01/16 20:33:27
+-------------- EPOCH  242/1001 --------------
+     Train loss: 0.00020555, accuracy: 100.00%
+Validation loss: 0.02196475, accuracy: 99.24%
+      Best loss: 0.01817317 at epoch 241
+   Elapsed time: 00:34:00
+      Timestamp: 2018/01/16 20:33:36
+-------------- EPOCH  243/1001 --------------
+     Train loss: 0.00013544, accuracy: 100.00%
+Validation loss: 0.02342894, accuracy: 99.24%
+      Best loss: 0.01817317 at epoch 241
+   Elapsed time: 00:34:08
+      Timestamp: 2018/01/16 20:33:44
+-------------- EPOCH  244/1001 --------------
+     Train loss: 0.00007877, accuracy: 100.00%
+Validation loss: 0.01884574, accuracy: 99.54%
+      Best loss: 0.01817317 at epoch 241
+   Elapsed time: 00:34:16
+      Timestamp: 2018/01/16 20:33:52
+-------------- EPOCH  245/1001 --------------
+     Train loss: 0.00010230, accuracy: 100.00%
+Validation loss: 0.01921507, accuracy: 99.49%
+      Best loss: 0.01817317 at epoch 241
+   Elapsed time: 00:34:25
+      Timestamp: 2018/01/16 20:34:00
+-------------- EPOCH  246/1001 --------------
+     Train loss: 0.00006425, accuracy: 100.00%
+Validation loss: 0.01851616, accuracy: 99.39%
+      Best loss: 0.01817317 at epoch 241
+   Elapsed time: 00:34:33
+      Timestamp: 2018/01/16 20:34:09
+-------------- EPOCH  247/1001 --------------
+     Train loss: 0.00006961, accuracy: 100.00%
+Validation loss: 0.01877856, accuracy: 99.49%
+      Best loss: 0.01817317 at epoch 241
+   Elapsed time: 00:34:42
+      Timestamp: 2018/01/16 20:34:17
+-------------- EPOCH  248/1001 --------------
+     Train loss: 0.00006203, accuracy: 100.00%
+Validation loss: 0.01813222, accuracy: 99.44%
+      Best loss: 0.01817317 at epoch 241
+   Elapsed time: 00:34:50
+      Timestamp: 2018/01/16 20:34:26
+-------------- EPOCH  249/1001 --------------
+     Train loss: 0.00005956, accuracy: 100.00%
+Validation loss: 0.01893107, accuracy: 99.29%
+      Best loss: 0.01813222 at epoch 248
+   Elapsed time: 00:35:01
+      Timestamp: 2018/01/16 20:34:36
+-------------- EPOCH  250/1001 --------------
+     Train loss: 0.00006878, accuracy: 100.00%
+Validation loss: 0.02116524, accuracy: 99.29%
+      Best loss: 0.01813222 at epoch 248
+   Elapsed time: 00:35:09
+      Timestamp: 2018/01/16 20:34:44
+-------------- EPOCH  251/1001 --------------
+     Train loss: 0.00013080, accuracy: 100.00%
+Validation loss: 0.02181025, accuracy: 99.29%
+      Best loss: 0.01813222 at epoch 248
+   Elapsed time: 00:35:17
+      Timestamp: 2018/01/16 20:34:52
+-------------- EPOCH  252/1001 --------------
+     Train loss: 0.00024719, accuracy: 100.00%
+Validation loss: 0.02524189, accuracy: 99.14%
+      Best loss: 0.01813222 at epoch 248
+   Elapsed time: 00:35:25
+      Timestamp: 2018/01/16 20:35:00
+-------------- EPOCH  253/1001 --------------
+     Train loss: 0.00009809, accuracy: 100.00%
+Validation loss: 0.01876128, accuracy: 99.44%
+      Best loss: 0.01813222 at epoch 248
+   Elapsed time: 00:35:33
+      Timestamp: 2018/01/16 20:35:09
+-------------- EPOCH  254/1001 --------------
+     Train loss: 0.00016303, accuracy: 100.00%
+Validation loss: 0.02114641, accuracy: 99.44%
+      Best loss: 0.01813222 at epoch 248
+   Elapsed time: 00:35:42
+      Timestamp: 2018/01/16 20:35:17
+-------------- EPOCH  255/1001 --------------
+     Train loss: 0.00013251, accuracy: 100.00%
+Validation loss: 0.01902868, accuracy: 99.44%
+      Best loss: 0.01813222 at epoch 248
+   Elapsed time: 00:35:50
+      Timestamp: 2018/01/16 20:35:26
+-------------- EPOCH  256/1001 --------------
+     Train loss: 0.00007213, accuracy: 100.00%
+Validation loss: 0.01808489, accuracy: 99.54%
+      Best loss: 0.01813222 at epoch 248
+   Elapsed time: 00:35:59
+      Timestamp: 2018/01/16 20:35:35
+-------------- EPOCH  257/1001 --------------
+     Train loss: 0.00006598, accuracy: 100.00%
+Validation loss: 0.01857753, accuracy: 99.39%
+      Best loss: 0.01808489 at epoch 256
+   Elapsed time: 00:36:10
+      Timestamp: 2018/01/16 20:35:45
+-------------- EPOCH  258/1001 --------------
+     Train loss: 0.00007150, accuracy: 100.00%
+Validation loss: 0.01804428, accuracy: 99.49%
+      Best loss: 0.01808489 at epoch 256
+   Elapsed time: 00:36:18
+      Timestamp: 2018/01/16 20:35:54
+-------------- EPOCH  259/1001 --------------
+     Train loss: 0.00007042, accuracy: 100.00%
+Validation loss: 0.01812631, accuracy: 99.49%
+      Best loss: 0.01804428 at epoch 258
+   Elapsed time: 00:36:27
+      Timestamp: 2018/01/16 20:36:02
+-------------- EPOCH  260/1001 --------------
+     Train loss: 0.00005805, accuracy: 100.00%
+Validation loss: 0.01773668, accuracy: 99.54%
+      Best loss: 0.01804428 at epoch 258
+   Elapsed time: 00:36:35
+      Timestamp: 2018/01/16 20:36:10
+-------------- EPOCH  261/1001 --------------
+     Train loss: 0.00006007, accuracy: 100.00%
+Validation loss: 0.01860698, accuracy: 99.49%
+      Best loss: 0.01773668 at epoch 260
+   Elapsed time: 00:36:46
+      Timestamp: 2018/01/16 20:36:21
+-------------- EPOCH  262/1001 --------------
+     Train loss: 0.00007946, accuracy: 100.00%
+Validation loss: 0.02056786, accuracy: 99.44%
+      Best loss: 0.01773668 at epoch 260
+   Elapsed time: 00:36:54
+      Timestamp: 2018/01/16 20:36:30
+-------------- EPOCH  263/1001 --------------
+     Train loss: 0.00004970, accuracy: 100.00%
+Validation loss: 0.01825193, accuracy: 99.49%
+      Best loss: 0.01773668 at epoch 260
+   Elapsed time: 00:37:03
+      Timestamp: 2018/01/16 20:36:38
+-------------- EPOCH  264/1001 --------------
+     Train loss: 0.00009119, accuracy: 100.00%
+Validation loss: 0.01989849, accuracy: 99.39%
+      Best loss: 0.01773668 at epoch 260
+   Elapsed time: 00:37:11
+      Timestamp: 2018/01/16 20:36:47
+-------------- EPOCH  265/1001 --------------
+     Train loss: 0.00010337, accuracy: 100.00%
+Validation loss: 0.02040582, accuracy: 99.44%
+      Best loss: 0.01773668 at epoch 260
+   Elapsed time: 00:37:20
+      Timestamp: 2018/01/16 20:36:56
+-------------- EPOCH  266/1001 --------------
+     Train loss: 0.00006158, accuracy: 100.00%
+Validation loss: 0.01873717, accuracy: 99.54%
+      Best loss: 0.01773668 at epoch 260
+   Elapsed time: 00:37:29
+      Timestamp: 2018/01/16 20:37:04
+-------------- EPOCH  267/1001 --------------
+     Train loss: 0.00004928, accuracy: 100.00%
+Validation loss: 0.01864824, accuracy: 99.54%
+      Best loss: 0.01773668 at epoch 260
+   Elapsed time: 00:37:37
+      Timestamp: 2018/01/16 20:37:13
+-------------- EPOCH  268/1001 --------------
+     Train loss: 0.00005735, accuracy: 100.00%
+Validation loss: 0.01749867, accuracy: 99.54%
+      Best loss: 0.01773668 at epoch 260
+   Elapsed time: 00:37:46
+      Timestamp: 2018/01/16 20:37:21
+-------------- EPOCH  269/1001 --------------
+     Train loss: 0.00005779, accuracy: 100.00%
+Validation loss: 0.01849427, accuracy: 99.59%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:37:57
+      Timestamp: 2018/01/16 20:37:32
+-------------- EPOCH  270/1001 --------------
+     Train loss: 0.00004721, accuracy: 100.00%
+Validation loss: 0.01761463, accuracy: 99.54%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:38:05
+      Timestamp: 2018/01/16 20:37:40
+-------------- EPOCH  271/1001 --------------
+     Train loss: 0.00004156, accuracy: 100.00%
+Validation loss: 0.01887727, accuracy: 99.49%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:38:13
+      Timestamp: 2018/01/16 20:37:49
+-------------- EPOCH  272/1001 --------------
+     Train loss: 0.00003477, accuracy: 100.00%
+Validation loss: 0.01771036, accuracy: 99.59%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:38:22
+      Timestamp: 2018/01/16 20:37:57
+-------------- EPOCH  273/1001 --------------
+     Train loss: 0.00007790, accuracy: 100.00%
+Validation loss: 0.02158334, accuracy: 99.34%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:38:30
+      Timestamp: 2018/01/16 20:38:06
+-------------- EPOCH  274/1001 --------------
+     Train loss: 0.00009606, accuracy: 100.00%
+Validation loss: 0.02369952, accuracy: 99.29%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:38:39
+      Timestamp: 2018/01/16 20:38:15
+-------------- EPOCH  275/1001 --------------
+     Train loss: 0.00008239, accuracy: 100.00%
+Validation loss: 0.01825347, accuracy: 99.54%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:38:48
+      Timestamp: 2018/01/16 20:38:23
+-------------- EPOCH  276/1001 --------------
+     Train loss: 0.00004310, accuracy: 100.00%
+Validation loss: 0.01796313, accuracy: 99.54%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:38:56
+      Timestamp: 2018/01/16 20:38:32
+-------------- EPOCH  277/1001 --------------
+     Train loss: 0.00005901, accuracy: 100.00%
+Validation loss: 0.01883497, accuracy: 99.39%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:39:05
+      Timestamp: 2018/01/16 20:38:40
+-------------- EPOCH  278/1001 --------------
+     Train loss: 0.00063363, accuracy: 100.00%
+Validation loss: 0.02509115, accuracy: 99.14%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:39:13
+      Timestamp: 2018/01/16 20:38:49
+-------------- EPOCH  279/1001 --------------
+     Train loss: 0.00011706, accuracy: 100.00%
+Validation loss: 0.02211370, accuracy: 99.34%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:39:22
+      Timestamp: 2018/01/16 20:38:58
+-------------- EPOCH  280/1001 --------------
+     Train loss: 0.00004776, accuracy: 100.00%
+Validation loss: 0.01864921, accuracy: 99.49%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:39:31
+      Timestamp: 2018/01/16 20:39:06
+-------------- EPOCH  281/1001 --------------
+     Train loss: 0.00005925, accuracy: 100.00%
+Validation loss: 0.01977476, accuracy: 99.34%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:39:39
+      Timestamp: 2018/01/16 20:39:15
+-------------- EPOCH  282/1001 --------------
+     Train loss: 0.00005113, accuracy: 100.00%
+Validation loss: 0.01813946, accuracy: 99.49%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:39:48
+      Timestamp: 2018/01/16 20:39:23
+-------------- EPOCH  283/1001 --------------
+     Train loss: 0.00016009, accuracy: 100.00%
+Validation loss: 0.02196107, accuracy: 99.44%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:39:57
+      Timestamp: 2018/01/16 20:39:32
+-------------- EPOCH  284/1001 --------------
+     Train loss: 0.00122526, accuracy: 99.98%
+Validation loss: 0.03791395, accuracy: 98.98%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:40:05
+      Timestamp: 2018/01/16 20:39:41
+-------------- EPOCH  285/1001 --------------
+     Train loss: 0.00033033, accuracy: 100.00%
+Validation loss: 0.01996776, accuracy: 99.24%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:40:14
+      Timestamp: 2018/01/16 20:39:49
+-------------- EPOCH  286/1001 --------------
+     Train loss: 0.00103631, accuracy: 100.00%
+Validation loss: 0.03277434, accuracy: 99.19%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:40:22
+      Timestamp: 2018/01/16 20:39:58
+-------------- EPOCH  287/1001 --------------
+     Train loss: 0.00018864, accuracy: 100.00%
+Validation loss: 0.02119523, accuracy: 99.44%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:40:31
+      Timestamp: 2018/01/16 20:40:06
+-------------- EPOCH  288/1001 --------------
+     Train loss: 0.00015030, accuracy: 100.00%
+Validation loss: 0.01673476, accuracy: 99.44%
+      Best loss: 0.01749867 at epoch 268
+   Elapsed time: 00:40:39
+      Timestamp: 2018/01/16 20:40:15
+-------------- EPOCH  289/1001 --------------
+     Train loss: 0.00015470, accuracy: 100.00%
+Validation loss: 0.02035656, accuracy: 99.39%
+      Best loss: 0.01673476 at epoch 288
+   Elapsed time: 00:40:50
+      Timestamp: 2018/01/16 20:40:26
+-------------- EPOCH  290/1001 --------------
+     Train loss: 0.00008546, accuracy: 100.00%
+Validation loss: 0.01893813, accuracy: 99.54%
+      Best loss: 0.01673476 at epoch 288
+   Elapsed time: 00:40:59
+      Timestamp: 2018/01/16 20:40:34
+-------------- EPOCH  291/1001 --------------
+     Train loss: 0.00009070, accuracy: 100.00%
+Validation loss: 0.02012668, accuracy: 99.49%
+      Best loss: 0.01673476 at epoch 288
+   Elapsed time: 00:41:07
+      Timestamp: 2018/01/16 20:40:43
+-------------- EPOCH  292/1001 --------------
+     Train loss: 0.00005933, accuracy: 100.00%
+Validation loss: 0.01806126, accuracy: 99.49%
+      Best loss: 0.01673476 at epoch 288
+   Elapsed time: 00:41:16
+      Timestamp: 2018/01/16 20:40:51
+-------------- EPOCH  293/1001 --------------
+     Train loss: 0.00003855, accuracy: 100.00%
+Validation loss: 0.01599935, accuracy: 99.54%
+      Best loss: 0.01673476 at epoch 288
+   Elapsed time: 00:41:24
+      Timestamp: 2018/01/16 20:40:59
+-------------- EPOCH  294/1001 --------------
+     Train loss: 0.00003606, accuracy: 100.00%
+Validation loss: 0.01656082, accuracy: 99.49%
+      Best loss: 0.01599935 at epoch 293
+   Elapsed time: 00:41:32
+      Timestamp: 2018/01/16 20:41:08
+-------------- EPOCH  295/1001 --------------
+     Train loss: 0.00011584, accuracy: 100.00%
+Validation loss: 0.02096714, accuracy: 99.44%
+      Best loss: 0.01599935 at epoch 293
+   Elapsed time: 00:41:41
+      Timestamp: 2018/01/16 20:41:16
+-------------- EPOCH  296/1001 --------------
+     Train loss: 0.00010874, accuracy: 100.00%
+Validation loss: 0.01675833, accuracy: 99.44%
+      Best loss: 0.01599935 at epoch 293
+   Elapsed time: 00:41:49
+      Timestamp: 2018/01/16 20:41:25
+-------------- EPOCH  297/1001 --------------
+     Train loss: 0.00005465, accuracy: 100.00%
+Validation loss: 0.01665541, accuracy: 99.54%
+      Best loss: 0.01599935 at epoch 293
+   Elapsed time: 00:41:58
+      Timestamp: 2018/01/16 20:41:34
+-------------- EPOCH  298/1001 --------------
+     Train loss: 0.00005163, accuracy: 100.00%
+Validation loss: 0.01654988, accuracy: 99.64%
+      Best loss: 0.01599935 at epoch 293
+   Elapsed time: 00:42:07
+      Timestamp: 2018/01/16 20:41:42
+-------------- EPOCH  299/1001 --------------
+     Train loss: 0.00003436, accuracy: 100.00%
+Validation loss: 0.01513051, accuracy: 99.54%
+      Best loss: 0.01599935 at epoch 293
+   Elapsed time: 00:42:15
+      Timestamp: 2018/01/16 20:41:51
+-------------- EPOCH  300/1001 --------------
+     Train loss: 0.00004171, accuracy: 100.00%
+Validation loss: 0.01690235, accuracy: 99.49%
+      Best loss: 0.01513051 at epoch 299
+   Elapsed time: 00:42:26
+      Timestamp: 2018/01/16 20:42:01
+-------------- EPOCH  301/1001 --------------
+     Train loss: 0.00002587, accuracy: 100.00%
+Validation loss: 0.01493905, accuracy: 99.54%
+      Best loss: 0.01513051 at epoch 299
+   Elapsed time: 00:42:34
+      Timestamp: 2018/01/16 20:42:09
+-------------- EPOCH  302/1001 --------------
+     Train loss: 0.00002753, accuracy: 100.00%
+Validation loss: 0.01418544, accuracy: 99.59%
+      Best loss: 0.01493905 at epoch 301
+   Elapsed time: 00:42:42
+      Timestamp: 2018/01/16 20:42:18
+-------------- EPOCH  303/1001 --------------
+     Train loss: 0.00003462, accuracy: 100.00%
+Validation loss: 0.01594904, accuracy: 99.54%
+      Best loss: 0.01418544 at epoch 302
+   Elapsed time: 00:42:51
+      Timestamp: 2018/01/16 20:42:27
+-------------- EPOCH  304/1001 --------------
+     Train loss: 0.00003273, accuracy: 100.00%
+Validation loss: 0.01669033, accuracy: 99.59%
+      Best loss: 0.01418544 at epoch 302
+   Elapsed time: 00:43:00
+      Timestamp: 2018/01/16 20:42:35
+-------------- EPOCH  305/1001 --------------
+     Train loss: 0.00003462, accuracy: 100.00%
+Validation loss: 0.01701755, accuracy: 99.59%
+      Best loss: 0.01418544 at epoch 302
+   Elapsed time: 00:43:09
+      Timestamp: 2018/01/16 20:42:44
+-------------- EPOCH  306/1001 --------------
+     Train loss: 0.00005643, accuracy: 100.00%
+Validation loss: 0.01858175, accuracy: 99.49%
+      Best loss: 0.01418544 at epoch 302
+   Elapsed time: 00:43:17
+      Timestamp: 2018/01/16 20:42:53
+-------------- EPOCH  307/1001 --------------
+     Train loss: 0.00004220, accuracy: 100.00%
+Validation loss: 0.01647178, accuracy: 99.54%
+      Best loss: 0.01418544 at epoch 302
+   Elapsed time: 00:43:26
+      Timestamp: 2018/01/16 20:43:01
+-------------- EPOCH  308/1001 --------------
+     Train loss: 0.00003361, accuracy: 100.00%
+Validation loss: 0.01706636, accuracy: 99.59%
+      Best loss: 0.01418544 at epoch 302
+   Elapsed time: 00:43:34
+      Timestamp: 2018/01/16 20:43:10
+-------------- EPOCH  309/1001 --------------
+     Train loss: 0.00003295, accuracy: 100.00%
+Validation loss: 0.01644816, accuracy: 99.59%
+      Best loss: 0.01418544 at epoch 302
+   Elapsed time: 00:43:43
+      Timestamp: 2018/01/16 20:43:18
+-------------- EPOCH  310/1001 --------------
+     Train loss: 0.00007427, accuracy: 100.00%
+Validation loss: 0.01731578, accuracy: 99.44%
+      Best loss: 0.01418544 at epoch 302
+   Elapsed time: 00:43:51
+      Timestamp: 2018/01/16 20:43:26
+-------------- EPOCH  311/1001 --------------
+     Train loss: 0.00004308, accuracy: 100.00%
+Validation loss: 0.01717883, accuracy: 99.44%
+      Best loss: 0.01418544 at epoch 302
+   Elapsed time: 00:43:59
+      Timestamp: 2018/01/16 20:43:35
+-------------- EPOCH  312/1001 --------------
+     Train loss: 0.00005866, accuracy: 100.00%
+Validation loss: 0.01704697, accuracy: 99.44%
+      Best loss: 0.01418544 at epoch 302
+   Elapsed time: 00:44:08
+      Timestamp: 2018/01/16 20:43:43
+-------------- EPOCH  313/1001 --------------
+     Train loss: 0.00005413, accuracy: 100.00%
+Validation loss: 0.01485034, accuracy: 99.49%
+      Best loss: 0.01418544 at epoch 302
+   Elapsed time: 00:44:16
+      Timestamp: 2018/01/16 20:43:52
+-------------- EPOCH  314/1001 --------------
+     Train loss: 0.00005339, accuracy: 100.00%
+Validation loss: 0.01525556, accuracy: 99.54%
+      Best loss: 0.01418544 at epoch 302
+   Elapsed time: 00:44:25
+      Timestamp: 2018/01/16 20:44:00
+-------------- EPOCH  315/1001 --------------
+     Train loss: 0.00006376, accuracy: 100.00%
+Validation loss: 0.01344390, accuracy: 99.59%
+      Best loss: 0.01418544 at epoch 302
+   Elapsed time: 00:44:33
+      Timestamp: 2018/01/16 20:44:09
+-------------- EPOCH  316/1001 --------------
+     Train loss: 0.00006076, accuracy: 100.00%
+Validation loss: 0.01656481, accuracy: 99.59%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:44:44
+      Timestamp: 2018/01/16 20:44:19
+-------------- EPOCH  317/1001 --------------
+     Train loss: 0.00004949, accuracy: 100.00%
+Validation loss: 0.01432695, accuracy: 99.59%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:44:52
+      Timestamp: 2018/01/16 20:44:27
+-------------- EPOCH  318/1001 --------------
+     Train loss: 0.00004910, accuracy: 100.00%
+Validation loss: 0.01616135, accuracy: 99.54%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:45:00
+      Timestamp: 2018/01/16 20:44:36
+-------------- EPOCH  319/1001 --------------
+     Train loss: 0.00003242, accuracy: 100.00%
+Validation loss: 0.01491050, accuracy: 99.59%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:45:09
+      Timestamp: 2018/01/16 20:44:44
+-------------- EPOCH  320/1001 --------------
+     Train loss: 0.00018022, accuracy: 100.00%
+Validation loss: 0.02378550, accuracy: 99.39%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:45:17
+      Timestamp: 2018/01/16 20:44:53
+-------------- EPOCH  321/1001 --------------
+     Train loss: 0.00013075, accuracy: 100.00%
+Validation loss: 0.01730356, accuracy: 99.49%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:45:26
+      Timestamp: 2018/01/16 20:45:01
+-------------- EPOCH  322/1001 --------------
+     Train loss: 0.00030631, accuracy: 100.00%
+Validation loss: 0.01806502, accuracy: 99.44%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:45:35
+      Timestamp: 2018/01/16 20:45:10
+-------------- EPOCH  323/1001 --------------
+     Train loss: 0.00002850, accuracy: 100.00%
+Validation loss: 0.01523761, accuracy: 99.59%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:45:43
+      Timestamp: 2018/01/16 20:45:19
+-------------- EPOCH  324/1001 --------------
+     Train loss: 0.00002470, accuracy: 100.00%
+Validation loss: 0.01491000, accuracy: 99.54%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:45:52
+      Timestamp: 2018/01/16 20:45:27
+-------------- EPOCH  325/1001 --------------
+     Train loss: 0.00002161, accuracy: 100.00%
+Validation loss: 0.01460261, accuracy: 99.59%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:46:00
+      Timestamp: 2018/01/16 20:45:36
+-------------- EPOCH  326/1001 --------------
+     Train loss: 0.00003546, accuracy: 100.00%
+Validation loss: 0.01563020, accuracy: 99.64%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:46:09
+      Timestamp: 2018/01/16 20:45:44
+-------------- EPOCH  327/1001 --------------
+     Train loss: 0.00002000, accuracy: 100.00%
+Validation loss: 0.01519372, accuracy: 99.59%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:46:17
+      Timestamp: 2018/01/16 20:45:53
+-------------- EPOCH  328/1001 --------------
+     Train loss: 0.00003315, accuracy: 100.00%
+Validation loss: 0.01496206, accuracy: 99.54%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:46:25
+      Timestamp: 2018/01/16 20:46:01
+-------------- EPOCH  329/1001 --------------
+     Train loss: 0.00005707, accuracy: 100.00%
+Validation loss: 0.01494709, accuracy: 99.44%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:46:34
+      Timestamp: 2018/01/16 20:46:09
+-------------- EPOCH  330/1001 --------------
+     Train loss: 0.00003667, accuracy: 100.00%
+Validation loss: 0.01827582, accuracy: 99.39%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:46:42
+      Timestamp: 2018/01/16 20:46:18
+-------------- EPOCH  331/1001 --------------
+     Train loss: 0.00002248, accuracy: 100.00%
+Validation loss: 0.01371927, accuracy: 99.54%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:46:51
+      Timestamp: 2018/01/16 20:46:26
+-------------- EPOCH  332/1001 --------------
+     Train loss: 0.00001849, accuracy: 100.00%
+Validation loss: 0.01471155, accuracy: 99.59%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:46:59
+      Timestamp: 2018/01/16 20:46:35
+-------------- EPOCH  333/1001 --------------
+     Train loss: 0.00012182, accuracy: 100.00%
+Validation loss: 0.02126878, accuracy: 99.24%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:47:08
+      Timestamp: 2018/01/16 20:46:44
+-------------- EPOCH  334/1001 --------------
+     Train loss: 0.00006389, accuracy: 100.00%
+Validation loss: 0.01676814, accuracy: 99.59%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:47:17
+      Timestamp: 2018/01/16 20:46:52
+-------------- EPOCH  335/1001 --------------
+     Train loss: 0.00004326, accuracy: 100.00%
+Validation loss: 0.01390737, accuracy: 99.64%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:47:25
+      Timestamp: 2018/01/16 20:47:01
+-------------- EPOCH  336/1001 --------------
+     Train loss: 0.00005712, accuracy: 100.00%
+Validation loss: 0.01524661, accuracy: 99.54%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:47:34
+      Timestamp: 2018/01/16 20:47:09
+-------------- EPOCH  337/1001 --------------
+     Train loss: 0.00004531, accuracy: 100.00%
+Validation loss: 0.01411019, accuracy: 99.70%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:47:42
+      Timestamp: 2018/01/16 20:47:18
+-------------- EPOCH  338/1001 --------------
+     Train loss: 0.00007688, accuracy: 100.00%
+Validation loss: 0.01229727, accuracy: 99.64%
+      Best loss: 0.01344390 at epoch 315
+   Elapsed time: 00:47:51
+      Timestamp: 2018/01/16 20:47:26
+-------------- EPOCH  339/1001 --------------
+     Train loss: 0.00005632, accuracy: 100.00%
+Validation loss: 0.01452498, accuracy: 99.70%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:48:01
+      Timestamp: 2018/01/16 20:47:36
+-------------- EPOCH  340/1001 --------------
+     Train loss: 0.00004881, accuracy: 100.00%
+Validation loss: 0.01369305, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:48:09
+      Timestamp: 2018/01/16 20:47:45
+-------------- EPOCH  341/1001 --------------
+     Train loss: 0.00007029, accuracy: 100.00%
+Validation loss: 0.01582714, accuracy: 99.49%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:48:17
+      Timestamp: 2018/01/16 20:47:53
+-------------- EPOCH  342/1001 --------------
+     Train loss: 0.00005950, accuracy: 100.00%
+Validation loss: 0.01496558, accuracy: 99.54%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:48:26
+      Timestamp: 2018/01/16 20:48:02
+-------------- EPOCH  343/1001 --------------
+     Train loss: 0.00004023, accuracy: 100.00%
+Validation loss: 0.01321110, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:48:35
+      Timestamp: 2018/01/16 20:48:10
+-------------- EPOCH  344/1001 --------------
+     Train loss: 0.00005399, accuracy: 100.00%
+Validation loss: 0.01580186, accuracy: 99.59%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:48:43
+      Timestamp: 2018/01/16 20:48:19
+-------------- EPOCH  345/1001 --------------
+     Train loss: 0.00002872, accuracy: 100.00%
+Validation loss: 0.01313846, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:48:52
+      Timestamp: 2018/01/16 20:48:27
+-------------- EPOCH  346/1001 --------------
+     Train loss: 0.00002432, accuracy: 100.00%
+Validation loss: 0.01461312, accuracy: 99.70%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:49:00
+      Timestamp: 2018/01/16 20:48:36
+-------------- EPOCH  347/1001 --------------
+     Train loss: 0.00001770, accuracy: 100.00%
+Validation loss: 0.01363609, accuracy: 99.59%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:49:09
+      Timestamp: 2018/01/16 20:48:45
+-------------- EPOCH  348/1001 --------------
+     Train loss: 0.00033246, accuracy: 100.00%
+Validation loss: 0.02010816, accuracy: 99.44%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:49:18
+      Timestamp: 2018/01/16 20:48:53
+-------------- EPOCH  349/1001 --------------
+     Train loss: 0.00004253, accuracy: 100.00%
+Validation loss: 0.01449778, accuracy: 99.54%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:49:26
+      Timestamp: 2018/01/16 20:49:02
+-------------- EPOCH  350/1001 --------------
+     Train loss: 0.00005965, accuracy: 100.00%
+Validation loss: 0.01363230, accuracy: 99.59%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:49:34
+      Timestamp: 2018/01/16 20:49:10
+-------------- EPOCH  351/1001 --------------
+     Train loss: 0.00031367, accuracy: 100.00%
+Validation loss: 0.01808733, accuracy: 99.34%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:49:43
+      Timestamp: 2018/01/16 20:49:18
+-------------- EPOCH  352/1001 --------------
+     Train loss: 0.00015078, accuracy: 100.00%
+Validation loss: 0.02118343, accuracy: 99.44%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:49:51
+      Timestamp: 2018/01/16 20:49:27
+-------------- EPOCH  353/1001 --------------
+     Train loss: 0.00003858, accuracy: 100.00%
+Validation loss: 0.01588412, accuracy: 99.44%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:50:00
+      Timestamp: 2018/01/16 20:49:36
+-------------- EPOCH  354/1001 --------------
+     Train loss: 0.00002369, accuracy: 100.00%
+Validation loss: 0.01391253, accuracy: 99.54%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:50:09
+      Timestamp: 2018/01/16 20:49:44
+-------------- EPOCH  355/1001 --------------
+     Train loss: 0.00002328, accuracy: 100.00%
+Validation loss: 0.01419042, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:50:17
+      Timestamp: 2018/01/16 20:49:53
+-------------- EPOCH  356/1001 --------------
+     Train loss: 0.00001638, accuracy: 100.00%
+Validation loss: 0.01302166, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:50:26
+      Timestamp: 2018/01/16 20:50:01
+-------------- EPOCH  357/1001 --------------
+     Train loss: 0.00004614, accuracy: 100.00%
+Validation loss: 0.01441003, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:50:34
+      Timestamp: 2018/01/16 20:50:10
+-------------- EPOCH  358/1001 --------------
+     Train loss: 0.00001967, accuracy: 100.00%
+Validation loss: 0.01410089, accuracy: 99.59%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:50:43
+      Timestamp: 2018/01/16 20:50:18
+-------------- EPOCH  359/1001 --------------
+     Train loss: 0.00001651, accuracy: 100.00%
+Validation loss: 0.01341700, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:50:52
+      Timestamp: 2018/01/16 20:50:27
+-------------- EPOCH  360/1001 --------------
+     Train loss: 0.00001465, accuracy: 100.00%
+Validation loss: 0.01321373, accuracy: 99.59%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:51:00
+      Timestamp: 2018/01/16 20:50:35
+-------------- EPOCH  361/1001 --------------
+     Train loss: 0.00001505, accuracy: 100.00%
+Validation loss: 0.01391632, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:51:08
+      Timestamp: 2018/01/16 20:50:44
+-------------- EPOCH  362/1001 --------------
+     Train loss: 0.00001645, accuracy: 100.00%
+Validation loss: 0.01294780, accuracy: 99.70%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:51:17
+      Timestamp: 2018/01/16 20:50:52
+-------------- EPOCH  363/1001 --------------
+     Train loss: 0.00003042, accuracy: 100.00%
+Validation loss: 0.01557676, accuracy: 99.59%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:51:25
+      Timestamp: 2018/01/16 20:51:01
+-------------- EPOCH  364/1001 --------------
+     Train loss: 0.00002112, accuracy: 100.00%
+Validation loss: 0.01424877, accuracy: 99.49%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:51:34
+      Timestamp: 2018/01/16 20:51:10
+-------------- EPOCH  365/1001 --------------
+     Train loss: 0.00001434, accuracy: 100.00%
+Validation loss: 0.01351956, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:51:43
+      Timestamp: 2018/01/16 20:51:18
+-------------- EPOCH  366/1001 --------------
+     Train loss: 0.00001200, accuracy: 100.00%
+Validation loss: 0.01293209, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:51:51
+      Timestamp: 2018/01/16 20:51:27
+-------------- EPOCH  367/1001 --------------
+     Train loss: 0.00001534, accuracy: 100.00%
+Validation loss: 0.01349568, accuracy: 99.70%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:52:00
+      Timestamp: 2018/01/16 20:51:35
+-------------- EPOCH  368/1001 --------------
+     Train loss: 0.00002819, accuracy: 100.00%
+Validation loss: 0.01798117, accuracy: 99.49%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:52:08
+      Timestamp: 2018/01/16 20:51:44
+-------------- EPOCH  369/1001 --------------
+     Train loss: 0.00001281, accuracy: 100.00%
+Validation loss: 0.01340944, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:52:17
+      Timestamp: 2018/01/16 20:51:52
+-------------- EPOCH  370/1001 --------------
+     Train loss: 0.00003549, accuracy: 100.00%
+Validation loss: 0.01361924, accuracy: 99.59%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:52:25
+      Timestamp: 2018/01/16 20:52:01
+-------------- EPOCH  371/1001 --------------
+     Train loss: 0.00003351, accuracy: 100.00%
+Validation loss: 0.01503877, accuracy: 99.54%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:52:34
+      Timestamp: 2018/01/16 20:52:09
+-------------- EPOCH  372/1001 --------------
+     Train loss: 0.00001730, accuracy: 100.00%
+Validation loss: 0.01277129, accuracy: 99.59%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:52:42
+      Timestamp: 2018/01/16 20:52:18
+-------------- EPOCH  373/1001 --------------
+     Train loss: 0.00001454, accuracy: 100.00%
+Validation loss: 0.01417782, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:52:51
+      Timestamp: 2018/01/16 20:52:26
+-------------- EPOCH  374/1001 --------------
+     Train loss: 0.00001366, accuracy: 100.00%
+Validation loss: 0.01377222, accuracy: 99.54%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:53:00
+      Timestamp: 2018/01/16 20:52:35
+-------------- EPOCH  375/1001 --------------
+     Train loss: 0.00001372, accuracy: 100.00%
+Validation loss: 0.01353867, accuracy: 99.49%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:53:08
+      Timestamp: 2018/01/16 20:52:44
+-------------- EPOCH  376/1001 --------------
+     Train loss: 0.00035603, accuracy: 100.00%
+Validation loss: 0.01960096, accuracy: 99.24%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:53:17
+      Timestamp: 2018/01/16 20:52:52
+-------------- EPOCH  377/1001 --------------
+     Train loss: 0.00012555, accuracy: 100.00%
+Validation loss: 0.01548912, accuracy: 99.49%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:53:25
+      Timestamp: 2018/01/16 20:53:01
+-------------- EPOCH  378/1001 --------------
+     Train loss: 0.00036294, accuracy: 100.00%
+Validation loss: 0.02557103, accuracy: 99.34%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:53:34
+      Timestamp: 2018/01/16 20:53:09
+-------------- EPOCH  379/1001 --------------
+     Train loss: 0.00017704, accuracy: 100.00%
+Validation loss: 0.01867720, accuracy: 99.44%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:53:42
+      Timestamp: 2018/01/16 20:53:18
+-------------- EPOCH  380/1001 --------------
+     Train loss: 0.00024114, accuracy: 100.00%
+Validation loss: 0.01780831, accuracy: 99.34%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:53:51
+      Timestamp: 2018/01/16 20:53:26
+-------------- EPOCH  381/1001 --------------
+     Train loss: 0.00005708, accuracy: 100.00%
+Validation loss: 0.01400702, accuracy: 99.59%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:53:59
+      Timestamp: 2018/01/16 20:53:35
+-------------- EPOCH  382/1001 --------------
+     Train loss: 0.00040701, accuracy: 100.00%
+Validation loss: 0.02015270, accuracy: 99.49%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:54:08
+      Timestamp: 2018/01/16 20:53:43
+-------------- EPOCH  383/1001 --------------
+     Train loss: 0.00009419, accuracy: 100.00%
+Validation loss: 0.01265096, accuracy: 99.70%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:54:16
+      Timestamp: 2018/01/16 20:53:52
+-------------- EPOCH  384/1001 --------------
+     Train loss: 0.00007218, accuracy: 100.00%
+Validation loss: 0.01412547, accuracy: 99.54%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:54:25
+      Timestamp: 2018/01/16 20:54:00
+-------------- EPOCH  385/1001 --------------
+     Train loss: 0.00005600, accuracy: 100.00%
+Validation loss: 0.01261372, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:54:33
+      Timestamp: 2018/01/16 20:54:09
+-------------- EPOCH  386/1001 --------------
+     Train loss: 0.00004373, accuracy: 100.00%
+Validation loss: 0.01212557, accuracy: 99.64%
+      Best loss: 0.01229727 at epoch 338
+   Elapsed time: 00:54:42
+      Timestamp: 2018/01/16 20:54:18
+-------------- EPOCH  387/1001 --------------
+     Train loss: 0.00002848, accuracy: 100.00%
+Validation loss: 0.01240933, accuracy: 99.70%
+      Best loss: 0.01212557 at epoch 386
+   Elapsed time: 00:54:52
+      Timestamp: 2018/01/16 20:54:28
+-------------- EPOCH  388/1001 --------------
+     Train loss: 0.00007870, accuracy: 100.00%
+Validation loss: 0.01481009, accuracy: 99.59%
+      Best loss: 0.01212557 at epoch 386
+   Elapsed time: 00:55:00
+      Timestamp: 2018/01/16 20:54:36
+-------------- EPOCH  389/1001 --------------
+     Train loss: 0.00006103, accuracy: 100.00%
+Validation loss: 0.01711488, accuracy: 99.49%
+      Best loss: 0.01212557 at epoch 386
+   Elapsed time: 00:55:08
+      Timestamp: 2018/01/16 20:54:44
+-------------- EPOCH  390/1001 --------------
+     Train loss: 0.00002230, accuracy: 100.00%
+Validation loss: 0.01170668, accuracy: 99.64%
+      Best loss: 0.01212557 at epoch 386
+   Elapsed time: 00:55:17
+      Timestamp: 2018/01/16 20:54:52
+-------------- EPOCH  391/1001 --------------
+     Train loss: 0.00001556, accuracy: 100.00%
+Validation loss: 0.01215539, accuracy: 99.75%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:55:28
+      Timestamp: 2018/01/16 20:55:03
+-------------- EPOCH  392/1001 --------------
+     Train loss: 0.00001391, accuracy: 100.00%
+Validation loss: 0.01219525, accuracy: 99.59%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:55:36
+      Timestamp: 2018/01/16 20:55:12
+-------------- EPOCH  393/1001 --------------
+     Train loss: 0.00001540, accuracy: 100.00%
+Validation loss: 0.01375855, accuracy: 99.59%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:55:45
+      Timestamp: 2018/01/16 20:55:20
+-------------- EPOCH  394/1001 --------------
+     Train loss: 0.00001369, accuracy: 100.00%
+Validation loss: 0.01216843, accuracy: 99.70%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:55:53
+      Timestamp: 2018/01/16 20:55:29
+-------------- EPOCH  395/1001 --------------
+     Train loss: 0.00001390, accuracy: 100.00%
+Validation loss: 0.01303013, accuracy: 99.64%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:56:01
+      Timestamp: 2018/01/16 20:55:37
+-------------- EPOCH  396/1001 --------------
+     Train loss: 0.00001412, accuracy: 100.00%
+Validation loss: 0.01253565, accuracy: 99.64%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:56:09
+      Timestamp: 2018/01/16 20:55:45
+-------------- EPOCH  397/1001 --------------
+     Train loss: 0.00001321, accuracy: 100.00%
+Validation loss: 0.01182544, accuracy: 99.70%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:56:18
+      Timestamp: 2018/01/16 20:55:53
+-------------- EPOCH  398/1001 --------------
+     Train loss: 0.00001899, accuracy: 100.00%
+Validation loss: 0.01277292, accuracy: 99.70%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:56:26
+      Timestamp: 2018/01/16 20:56:02
+-------------- EPOCH  399/1001 --------------
+     Train loss: 0.00001008, accuracy: 100.00%
+Validation loss: 0.01202813, accuracy: 99.70%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:56:35
+      Timestamp: 2018/01/16 20:56:11
+-------------- EPOCH  400/1001 --------------
+     Train loss: 0.00001109, accuracy: 100.00%
+Validation loss: 0.01261487, accuracy: 99.70%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:56:44
+      Timestamp: 2018/01/16 20:56:19
+-------------- EPOCH  401/1001 --------------
+     Train loss: 0.00000965, accuracy: 100.00%
+Validation loss: 0.01210839, accuracy: 99.70%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:56:52
+      Timestamp: 2018/01/16 20:56:28
+-------------- EPOCH  402/1001 --------------
+     Train loss: 0.00001120, accuracy: 100.00%
+Validation loss: 0.01280057, accuracy: 99.75%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:57:01
+      Timestamp: 2018/01/16 20:56:36
+-------------- EPOCH  403/1001 --------------
+     Train loss: 0.00001047, accuracy: 100.00%
+Validation loss: 0.01206720, accuracy: 99.59%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:57:09
+      Timestamp: 2018/01/16 20:56:44
+-------------- EPOCH  404/1001 --------------
+     Train loss: 0.00000913, accuracy: 100.00%
+Validation loss: 0.01211423, accuracy: 99.64%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:57:17
+      Timestamp: 2018/01/16 20:56:52
+-------------- EPOCH  405/1001 --------------
+     Train loss: 0.00001102, accuracy: 100.00%
+Validation loss: 0.01297347, accuracy: 99.70%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:57:25
+      Timestamp: 2018/01/16 20:57:01
+-------------- EPOCH  406/1001 --------------
+     Train loss: 0.00000990, accuracy: 100.00%
+Validation loss: 0.01244412, accuracy: 99.64%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:57:34
+      Timestamp: 2018/01/16 20:57:09
+-------------- EPOCH  407/1001 --------------
+     Train loss: 0.00000978, accuracy: 100.00%
+Validation loss: 0.01213977, accuracy: 99.70%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:57:42
+      Timestamp: 2018/01/16 20:57:18
+-------------- EPOCH  408/1001 --------------
+     Train loss: 0.00000982, accuracy: 100.00%
+Validation loss: 0.01178298, accuracy: 99.64%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:57:51
+      Timestamp: 2018/01/16 20:57:26
+-------------- EPOCH  409/1001 --------------
+     Train loss: 0.00000973, accuracy: 100.00%
+Validation loss: 0.01207296, accuracy: 99.59%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:57:59
+      Timestamp: 2018/01/16 20:57:35
+-------------- EPOCH  410/1001 --------------
+     Train loss: 0.00000833, accuracy: 100.00%
+Validation loss: 0.01245643, accuracy: 99.70%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:58:07
+      Timestamp: 2018/01/16 20:57:43
+-------------- EPOCH  411/1001 --------------
+     Train loss: 0.00001124, accuracy: 100.00%
+Validation loss: 0.01264177, accuracy: 99.64%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:58:15
+      Timestamp: 2018/01/16 20:57:51
+-------------- EPOCH  412/1001 --------------
+     Train loss: 0.00000949, accuracy: 100.00%
+Validation loss: 0.01322231, accuracy: 99.64%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:58:23
+      Timestamp: 2018/01/16 20:57:59
+-------------- EPOCH  413/1001 --------------
+     Train loss: 0.00003657, accuracy: 100.00%
+Validation loss: 0.01609771, accuracy: 99.59%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:58:32
+      Timestamp: 2018/01/16 20:58:08
+-------------- EPOCH  414/1001 --------------
+     Train loss: 0.00001775, accuracy: 100.00%
+Validation loss: 0.01330572, accuracy: 99.54%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:58:41
+      Timestamp: 2018/01/16 20:58:16
+-------------- EPOCH  415/1001 --------------
+     Train loss: 0.00002041, accuracy: 100.00%
+Validation loss: 0.01470002, accuracy: 99.64%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:58:49
+      Timestamp: 2018/01/16 20:58:25
+-------------- EPOCH  416/1001 --------------
+     Train loss: 0.00031036, accuracy: 100.00%
+Validation loss: 0.01922224, accuracy: 99.44%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:58:58
+      Timestamp: 2018/01/16 20:58:33
+-------------- EPOCH  417/1001 --------------
+     Train loss: 0.00004315, accuracy: 100.00%
+Validation loss: 0.01687299, accuracy: 99.54%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:59:06
+      Timestamp: 2018/01/16 20:58:41
+-------------- EPOCH  418/1001 --------------
+     Train loss: 0.00005244, accuracy: 100.00%
+Validation loss: 0.01897444, accuracy: 99.49%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:59:14
+      Timestamp: 2018/01/16 20:58:49
+-------------- EPOCH  419/1001 --------------
+     Train loss: 0.00004264, accuracy: 100.00%
+Validation loss: 0.01635560, accuracy: 99.54%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:59:22
+      Timestamp: 2018/01/16 20:58:57
+-------------- EPOCH  420/1001 --------------
+     Train loss: 0.00002201, accuracy: 100.00%
+Validation loss: 0.01319563, accuracy: 99.64%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:59:30
+      Timestamp: 2018/01/16 20:59:06
+-------------- EPOCH  421/1001 --------------
+     Train loss: 0.00003990, accuracy: 100.00%
+Validation loss: 0.01395124, accuracy: 99.59%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:59:39
+      Timestamp: 2018/01/16 20:59:14
+-------------- EPOCH  422/1001 --------------
+     Train loss: 0.00002956, accuracy: 100.00%
+Validation loss: 0.01336558, accuracy: 99.59%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:59:47
+      Timestamp: 2018/01/16 20:59:23
+-------------- EPOCH  423/1001 --------------
+     Train loss: 0.00002620, accuracy: 100.00%
+Validation loss: 0.01241991, accuracy: 99.64%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 00:59:56
+      Timestamp: 2018/01/16 20:59:31
+-------------- EPOCH  424/1001 --------------
+     Train loss: 0.00003620, accuracy: 100.00%
+Validation loss: 0.01278359, accuracy: 99.54%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 01:00:04
+      Timestamp: 2018/01/16 20:59:40
+-------------- EPOCH  425/1001 --------------
+     Train loss: 0.00065206, accuracy: 100.00%
+Validation loss: 0.02308900, accuracy: 99.39%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 01:00:12
+      Timestamp: 2018/01/16 20:59:48
+-------------- EPOCH  426/1001 --------------
+     Train loss: 0.00005219, accuracy: 100.00%
+Validation loss: 0.01317024, accuracy: 99.70%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 01:00:20
+      Timestamp: 2018/01/16 20:59:56
+-------------- EPOCH  427/1001 --------------
+     Train loss: 0.00002525, accuracy: 100.00%
+Validation loss: 0.01201044, accuracy: 99.75%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 01:00:28
+      Timestamp: 2018/01/16 21:00:04
+-------------- EPOCH  428/1001 --------------
+     Train loss: 0.00002202, accuracy: 100.00%
+Validation loss: 0.01130690, accuracy: 99.75%
+      Best loss: 0.01170668 at epoch 390
+   Elapsed time: 01:00:37
+      Timestamp: 2018/01/16 21:00:12
+-------------- EPOCH  429/1001 --------------
+     Train loss: 0.00003037, accuracy: 100.00%
+Validation loss: 0.01226370, accuracy: 99.64%
+      Best loss: 0.01130690 at epoch 428
+   Elapsed time: 01:00:48
+      Timestamp: 2018/01/16 21:00:23
+-------------- EPOCH  430/1001 --------------
+     Train loss: 0.00001585, accuracy: 100.00%
+Validation loss: 0.01095285, accuracy: 99.75%
+      Best loss: 0.01130690 at epoch 428
+   Elapsed time: 01:00:56
+      Timestamp: 2018/01/16 21:00:32
+-------------- EPOCH  431/1001 --------------
+     Train loss: 0.00001460, accuracy: 100.00%
+Validation loss: 0.01082297, accuracy: 99.75%
+      Best loss: 0.01095285 at epoch 430
+   Elapsed time: 01:01:06
+      Timestamp: 2018/01/16 21:00:41
+-------------- EPOCH  432/1001 --------------
+     Train loss: 0.00001138, accuracy: 100.00%
+Validation loss: 0.01094059, accuracy: 99.75%
+      Best loss: 0.01082297 at epoch 431
+   Elapsed time: 01:01:14
+      Timestamp: 2018/01/16 21:00:50
+-------------- EPOCH  433/1001 --------------
+     Train loss: 0.00001803, accuracy: 100.00%
+Validation loss: 0.01119765, accuracy: 99.75%
+      Best loss: 0.01082297 at epoch 431
+   Elapsed time: 01:01:22
+      Timestamp: 2018/01/16 21:00:58
+-------------- EPOCH  434/1001 --------------
+     Train loss: 0.00001752, accuracy: 100.00%
+Validation loss: 0.01346934, accuracy: 99.70%
+      Best loss: 0.01082297 at epoch 431
+   Elapsed time: 01:01:30
+      Timestamp: 2018/01/16 21:01:06
+-------------- EPOCH  435/1001 --------------
+     Train loss: 0.00000948, accuracy: 100.00%
+Validation loss: 0.01156531, accuracy: 99.75%
+      Best loss: 0.01082297 at epoch 431
+   Elapsed time: 01:01:39
+      Timestamp: 2018/01/16 21:01:14
+-------------- EPOCH  436/1001 --------------
+     Train loss: 0.00001842, accuracy: 100.00%
+Validation loss: 0.01389748, accuracy: 99.64%
+      Best loss: 0.01082297 at epoch 431
+   Elapsed time: 01:01:47
+      Timestamp: 2018/01/16 21:01:23
+-------------- EPOCH  437/1001 --------------
+     Train loss: 0.00001078, accuracy: 100.00%
+Validation loss: 0.01203904, accuracy: 99.75%
+      Best loss: 0.01082297 at epoch 431
+   Elapsed time: 01:01:56
+      Timestamp: 2018/01/16 21:01:31
+-------------- EPOCH  438/1001 --------------
+     Train loss: 0.00000828, accuracy: 100.00%
+Validation loss: 0.01172428, accuracy: 99.75%
+      Best loss: 0.01082297 at epoch 431
+   Elapsed time: 01:02:04
+      Timestamp: 2018/01/16 21:01:40
+-------------- EPOCH  439/1001 --------------
+     Train loss: 0.00001225, accuracy: 100.00%
+Validation loss: 0.01320301, accuracy: 99.75%
+      Best loss: 0.01082297 at epoch 431
+   Elapsed time: 01:02:13
+      Timestamp: 2018/01/16 21:01:48
+-------------- EPOCH  440/1001 --------------
+     Train loss: 0.00002296, accuracy: 100.00%
+Validation loss: 0.01296074, accuracy: 99.75%
+      Best loss: 0.01082297 at epoch 431
+   Elapsed time: 01:02:21
+      Timestamp: 2018/01/16 21:01:57
+-------------- EPOCH  441/1001 --------------
+     Train loss: 0.00001683, accuracy: 100.00%
+Validation loss: 0.01237154, accuracy: 99.70%
+      Best loss: 0.01082297 at epoch 431
+   Elapsed time: 01:02:29
+      Timestamp: 2018/01/16 21:02:05
+-------------- EPOCH  442/1001 --------------
+     Train loss: 0.00003092, accuracy: 100.00%
+Validation loss: 0.01057321, accuracy: 99.64%
+      Best loss: 0.01082297 at epoch 431
+   Elapsed time: 01:02:37
+      Timestamp: 2018/01/16 21:02:13
+-------------- EPOCH  443/1001 --------------
+     Train loss: 0.00006753, accuracy: 100.00%
+Validation loss: 0.01621727, accuracy: 99.64%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:02:46
+      Timestamp: 2018/01/16 21:02:21
+-------------- EPOCH  444/1001 --------------
+     Train loss: 0.00011288, accuracy: 100.00%
+Validation loss: 0.01714790, accuracy: 99.54%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:02:54
+      Timestamp: 2018/01/16 21:02:30
+-------------- EPOCH  445/1001 --------------
+     Train loss: 0.00006935, accuracy: 100.00%
+Validation loss: 0.01535084, accuracy: 99.54%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:03:03
+      Timestamp: 2018/01/16 21:02:38
+-------------- EPOCH  446/1001 --------------
+     Train loss: 0.00003438, accuracy: 100.00%
+Validation loss: 0.01252963, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:03:11
+      Timestamp: 2018/01/16 21:02:47
+-------------- EPOCH  447/1001 --------------
+     Train loss: 0.00002161, accuracy: 100.00%
+Validation loss: 0.01300153, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:03:20
+      Timestamp: 2018/01/16 21:02:56
+-------------- EPOCH  448/1001 --------------
+     Train loss: 0.00002515, accuracy: 100.00%
+Validation loss: 0.01376981, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:03:29
+      Timestamp: 2018/01/16 21:03:04
+-------------- EPOCH  449/1001 --------------
+     Train loss: 0.00002142, accuracy: 100.00%
+Validation loss: 0.01289493, accuracy: 99.59%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:03:37
+      Timestamp: 2018/01/16 21:03:12
+-------------- EPOCH  450/1001 --------------
+     Train loss: 0.00001751, accuracy: 100.00%
+Validation loss: 0.01255338, accuracy: 99.75%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:03:45
+      Timestamp: 2018/01/16 21:03:20
+-------------- EPOCH  451/1001 --------------
+     Train loss: 0.00001860, accuracy: 100.00%
+Validation loss: 0.01140450, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:03:53
+      Timestamp: 2018/01/16 21:03:29
+-------------- EPOCH  452/1001 --------------
+     Train loss: 0.00001936, accuracy: 100.00%
+Validation loss: 0.01399073, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:04:02
+      Timestamp: 2018/01/16 21:03:37
+-------------- EPOCH  453/1001 --------------
+     Train loss: 0.00002220, accuracy: 100.00%
+Validation loss: 0.01427902, accuracy: 99.49%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:04:10
+      Timestamp: 2018/01/16 21:03:46
+-------------- EPOCH  454/1001 --------------
+     Train loss: 0.00001106, accuracy: 100.00%
+Validation loss: 0.01257558, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:04:19
+      Timestamp: 2018/01/16 21:03:54
+-------------- EPOCH  455/1001 --------------
+     Train loss: 0.00005605, accuracy: 100.00%
+Validation loss: 0.01444873, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:04:27
+      Timestamp: 2018/01/16 21:04:03
+-------------- EPOCH  456/1001 --------------
+     Train loss: 0.00001296, accuracy: 100.00%
+Validation loss: 0.01197356, accuracy: 99.75%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:04:35
+      Timestamp: 2018/01/16 21:04:11
+-------------- EPOCH  457/1001 --------------
+     Train loss: 0.00001042, accuracy: 100.00%
+Validation loss: 0.01250890, accuracy: 99.75%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:04:43
+      Timestamp: 2018/01/16 21:04:19
+-------------- EPOCH  458/1001 --------------
+     Train loss: 0.00001360, accuracy: 100.00%
+Validation loss: 0.01358759, accuracy: 99.64%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:04:51
+      Timestamp: 2018/01/16 21:04:27
+-------------- EPOCH  459/1001 --------------
+     Train loss: 0.00003264, accuracy: 100.00%
+Validation loss: 0.01523372, accuracy: 99.54%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:05:00
+      Timestamp: 2018/01/16 21:04:36
+-------------- EPOCH  460/1001 --------------
+     Train loss: 0.00002777, accuracy: 100.00%
+Validation loss: 0.01671314, accuracy: 99.64%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:05:09
+      Timestamp: 2018/01/16 21:04:44
+-------------- EPOCH  461/1001 --------------
+     Train loss: 0.00001348, accuracy: 100.00%
+Validation loss: 0.01408315, accuracy: 99.59%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:05:17
+      Timestamp: 2018/01/16 21:04:53
+-------------- EPOCH  462/1001 --------------
+     Train loss: 0.00001951, accuracy: 100.00%
+Validation loss: 0.01344593, accuracy: 99.64%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:05:26
+      Timestamp: 2018/01/16 21:05:01
+-------------- EPOCH  463/1001 --------------
+     Train loss: 0.00001204, accuracy: 100.00%
+Validation loss: 0.01349040, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:05:34
+      Timestamp: 2018/01/16 21:05:10
+-------------- EPOCH  464/1001 --------------
+     Train loss: 0.00001141, accuracy: 100.00%
+Validation loss: 0.01457597, accuracy: 99.59%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:05:42
+      Timestamp: 2018/01/16 21:05:18
+-------------- EPOCH  465/1001 --------------
+     Train loss: 0.00001238, accuracy: 100.00%
+Validation loss: 0.01385906, accuracy: 99.75%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:05:50
+      Timestamp: 2018/01/16 21:05:26
+-------------- EPOCH  466/1001 --------------
+     Train loss: 0.00001461, accuracy: 100.00%
+Validation loss: 0.01427521, accuracy: 99.64%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:05:58
+      Timestamp: 2018/01/16 21:05:34
+-------------- EPOCH  467/1001 --------------
+     Train loss: 0.00000850, accuracy: 100.00%
+Validation loss: 0.01251358, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:06:07
+      Timestamp: 2018/01/16 21:05:43
+-------------- EPOCH  468/1001 --------------
+     Train loss: 0.00001828, accuracy: 100.00%
+Validation loss: 0.01568360, accuracy: 99.54%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:06:16
+      Timestamp: 2018/01/16 21:05:51
+-------------- EPOCH  469/1001 --------------
+     Train loss: 0.00001159, accuracy: 100.00%
+Validation loss: 0.01174712, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:06:24
+      Timestamp: 2018/01/16 21:06:00
+-------------- EPOCH  470/1001 --------------
+     Train loss: 0.00002822, accuracy: 100.00%
+Validation loss: 0.01284909, accuracy: 99.64%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:06:33
+      Timestamp: 2018/01/16 21:06:08
+-------------- EPOCH  471/1001 --------------
+     Train loss: 0.00002111, accuracy: 100.00%
+Validation loss: 0.01335581, accuracy: 99.64%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:06:41
+      Timestamp: 2018/01/16 21:06:17
+-------------- EPOCH  472/1001 --------------
+     Train loss: 0.00001109, accuracy: 100.00%
+Validation loss: 0.01355422, accuracy: 99.64%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:06:49
+      Timestamp: 2018/01/16 21:06:25
+-------------- EPOCH  473/1001 --------------
+     Train loss: 0.00002497, accuracy: 100.00%
+Validation loss: 0.01597267, accuracy: 99.64%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:06:57
+      Timestamp: 2018/01/16 21:06:33
+-------------- EPOCH  474/1001 --------------
+     Train loss: 0.00002751, accuracy: 100.00%
+Validation loss: 0.01466449, accuracy: 99.59%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:07:06
+      Timestamp: 2018/01/16 21:06:41
+-------------- EPOCH  475/1001 --------------
+     Train loss: 0.00001055, accuracy: 100.00%
+Validation loss: 0.01264284, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:07:14
+      Timestamp: 2018/01/16 21:06:50
+-------------- EPOCH  476/1001 --------------
+     Train loss: 0.00001435, accuracy: 100.00%
+Validation loss: 0.01574923, accuracy: 99.59%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:07:23
+      Timestamp: 2018/01/16 21:06:58
+-------------- EPOCH  477/1001 --------------
+     Train loss: 0.00002312, accuracy: 100.00%
+Validation loss: 0.01405703, accuracy: 99.54%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:07:31
+      Timestamp: 2018/01/16 21:07:07
+-------------- EPOCH  478/1001 --------------
+     Train loss: 0.00009321, accuracy: 100.00%
+Validation loss: 0.01590445, accuracy: 99.59%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:07:40
+      Timestamp: 2018/01/16 21:07:15
+-------------- EPOCH  479/1001 --------------
+     Train loss: 0.00001558, accuracy: 100.00%
+Validation loss: 0.01391906, accuracy: 99.54%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:07:48
+      Timestamp: 2018/01/16 21:07:23
+-------------- EPOCH  480/1001 --------------
+     Train loss: 0.00031879, accuracy: 100.00%
+Validation loss: 0.02086038, accuracy: 99.49%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:07:56
+      Timestamp: 2018/01/16 21:07:31
+-------------- EPOCH  481/1001 --------------
+     Train loss: 0.00008188, accuracy: 100.00%
+Validation loss: 0.01738213, accuracy: 99.49%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:08:04
+      Timestamp: 2018/01/16 21:07:40
+-------------- EPOCH  482/1001 --------------
+     Train loss: 0.00025742, accuracy: 100.00%
+Validation loss: 0.01995310, accuracy: 99.44%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:08:13
+      Timestamp: 2018/01/16 21:07:48
+-------------- EPOCH  483/1001 --------------
+     Train loss: 0.00007316, accuracy: 100.00%
+Validation loss: 0.01204056, accuracy: 99.59%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:08:22
+      Timestamp: 2018/01/16 21:07:57
+-------------- EPOCH  484/1001 --------------
+     Train loss: 0.00007011, accuracy: 100.00%
+Validation loss: 0.01407233, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:08:30
+      Timestamp: 2018/01/16 21:08:06
+-------------- EPOCH  485/1001 --------------
+     Train loss: 0.00002909, accuracy: 100.00%
+Validation loss: 0.01112971, accuracy: 99.75%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:08:39
+      Timestamp: 2018/01/16 21:08:14
+-------------- EPOCH  486/1001 --------------
+     Train loss: 0.00001648, accuracy: 100.00%
+Validation loss: 0.01217729, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:08:47
+      Timestamp: 2018/01/16 21:08:22
+-------------- EPOCH  487/1001 --------------
+     Train loss: 0.00001257, accuracy: 100.00%
+Validation loss: 0.01070867, accuracy: 99.64%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:08:55
+      Timestamp: 2018/01/16 21:08:30
+-------------- EPOCH  488/1001 --------------
+     Train loss: 0.00000971, accuracy: 100.00%
+Validation loss: 0.01191987, accuracy: 99.70%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:09:03
+      Timestamp: 2018/01/16 21:08:38
+-------------- EPOCH  489/1001 --------------
+     Train loss: 0.00000620, accuracy: 100.00%
+Validation loss: 0.01006208, accuracy: 99.75%
+      Best loss: 0.01057321 at epoch 442
+   Elapsed time: 01:09:11
+      Timestamp: 2018/01/16 21:08:47
+-------------- EPOCH  490/1001 --------------
+     Train loss: 0.00000626, accuracy: 100.00%
+Validation loss: 0.00969649, accuracy: 99.75%
+      Best loss: 0.01006208 at epoch 489
+   Elapsed time: 01:09:22
+      Timestamp: 2018/01/16 21:08:58
+-------------- EPOCH  491/1001 --------------
+     Train loss: 0.00000922, accuracy: 100.00%
+Validation loss: 0.01072643, accuracy: 99.64%
+      Best loss: 0.00969649 at epoch 490
+   Elapsed time: 01:09:33
+      Timestamp: 2018/01/16 21:09:08
+-------------- EPOCH  492/1001 --------------
+     Train loss: 0.00001268, accuracy: 100.00%
+Validation loss: 0.01120448, accuracy: 99.70%
+      Best loss: 0.00969649 at epoch 490
+   Elapsed time: 01:09:41
+      Timestamp: 2018/01/16 21:09:16
+-------------- EPOCH  493/1001 --------------
+     Train loss: 0.00000897, accuracy: 100.00%
+Validation loss: 0.01010243, accuracy: 99.70%
+      Best loss: 0.00969649 at epoch 490
+   Elapsed time: 01:09:49
+      Timestamp: 2018/01/16 21:09:24
+-------------- EPOCH  494/1001 --------------
+     Train loss: 0.00000778, accuracy: 100.00%
+Validation loss: 0.00958270, accuracy: 99.70%
+      Best loss: 0.00969649 at epoch 490
+   Elapsed time: 01:09:57
+      Timestamp: 2018/01/16 21:09:32
+-------------- EPOCH  495/1001 --------------
+     Train loss: 0.00001182, accuracy: 100.00%
+Validation loss: 0.01017845, accuracy: 99.80%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:10:05
+      Timestamp: 2018/01/16 21:09:41
+-------------- EPOCH  496/1001 --------------
+     Train loss: 0.00001449, accuracy: 100.00%
+Validation loss: 0.01441494, accuracy: 99.64%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:10:14
+      Timestamp: 2018/01/16 21:09:50
+-------------- EPOCH  497/1001 --------------
+     Train loss: 0.00000787, accuracy: 100.00%
+Validation loss: 0.01011193, accuracy: 99.64%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:10:23
+      Timestamp: 2018/01/16 21:09:58
+-------------- EPOCH  498/1001 --------------
+     Train loss: 0.00000578, accuracy: 100.00%
+Validation loss: 0.00996137, accuracy: 99.70%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:10:31
+      Timestamp: 2018/01/16 21:10:07
+-------------- EPOCH  499/1001 --------------
+     Train loss: 0.00000514, accuracy: 100.00%
+Validation loss: 0.01005878, accuracy: 99.70%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:10:40
+      Timestamp: 2018/01/16 21:10:15
+-------------- EPOCH  500/1001 --------------
+     Train loss: 0.00000486, accuracy: 100.00%
+Validation loss: 0.01058056, accuracy: 99.70%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:10:48
+      Timestamp: 2018/01/16 21:10:23
+-------------- EPOCH  501/1001 --------------
+     Train loss: 0.00000430, accuracy: 100.00%
+Validation loss: 0.01022805, accuracy: 99.70%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:10:56
+      Timestamp: 2018/01/16 21:10:32
+-------------- EPOCH  502/1001 --------------
+     Train loss: 0.00000473, accuracy: 100.00%
+Validation loss: 0.00987965, accuracy: 99.70%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:11:04
+      Timestamp: 2018/01/16 21:10:40
+-------------- EPOCH  503/1001 --------------
+     Train loss: 0.00000456, accuracy: 100.00%
+Validation loss: 0.01021928, accuracy: 99.70%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:11:12
+      Timestamp: 2018/01/16 21:10:48
+-------------- EPOCH  504/1001 --------------
+     Train loss: 0.00000443, accuracy: 100.00%
+Validation loss: 0.01074964, accuracy: 99.70%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:11:21
+      Timestamp: 2018/01/16 21:10:57
+-------------- EPOCH  505/1001 --------------
+     Train loss: 0.00000489, accuracy: 100.00%
+Validation loss: 0.01075811, accuracy: 99.70%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:11:30
+      Timestamp: 2018/01/16 21:11:05
+-------------- EPOCH  506/1001 --------------
+     Train loss: 0.00000433, accuracy: 100.00%
+Validation loss: 0.01003461, accuracy: 99.75%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:11:38
+      Timestamp: 2018/01/16 21:11:14
+-------------- EPOCH  507/1001 --------------
+     Train loss: 0.00000497, accuracy: 100.00%
+Validation loss: 0.01092791, accuracy: 99.64%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:11:47
+      Timestamp: 2018/01/16 21:11:22
+-------------- EPOCH  508/1001 --------------
+     Train loss: 0.00000438, accuracy: 100.00%
+Validation loss: 0.01049198, accuracy: 99.70%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:11:55
+      Timestamp: 2018/01/16 21:11:30
+-------------- EPOCH  509/1001 --------------
+     Train loss: 0.00000430, accuracy: 100.00%
+Validation loss: 0.01053652, accuracy: 99.70%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:12:03
+      Timestamp: 2018/01/16 21:11:38
+-------------- EPOCH  510/1001 --------------
+     Train loss: 0.00000725, accuracy: 100.00%
+Validation loss: 0.01189277, accuracy: 99.70%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:12:11
+      Timestamp: 2018/01/16 21:11:46
+-------------- EPOCH  511/1001 --------------
+     Train loss: 0.00000521, accuracy: 100.00%
+Validation loss: 0.00966983, accuracy: 99.70%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:12:19
+      Timestamp: 2018/01/16 21:11:55
+-------------- EPOCH  512/1001 --------------
+     Train loss: 0.00000494, accuracy: 100.00%
+Validation loss: 0.00934871, accuracy: 99.70%
+      Best loss: 0.00958270 at epoch 494
+   Elapsed time: 01:12:28
+      Timestamp: 2018/01/16 21:12:04
+-------------- EPOCH  513/1001 --------------
+     Train loss: 0.00000559, accuracy: 100.00%
+Validation loss: 0.01123983, accuracy: 99.70%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:12:38
+      Timestamp: 2018/01/16 21:12:14
+-------------- EPOCH  514/1001 --------------
+     Train loss: 0.00000466, accuracy: 100.00%
+Validation loss: 0.01077548, accuracy: 99.75%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:12:46
+      Timestamp: 2018/01/16 21:12:22
+-------------- EPOCH  515/1001 --------------
+     Train loss: 0.00000447, accuracy: 100.00%
+Validation loss: 0.01131877, accuracy: 99.70%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:12:54
+      Timestamp: 2018/01/16 21:12:30
+-------------- EPOCH  516/1001 --------------
+     Train loss: 0.00000393, accuracy: 100.00%
+Validation loss: 0.00994612, accuracy: 99.70%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:13:02
+      Timestamp: 2018/01/16 21:12:38
+-------------- EPOCH  517/1001 --------------
+     Train loss: 0.00077935, accuracy: 99.98%
+Validation loss: 0.03371721, accuracy: 99.04%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:13:11
+      Timestamp: 2018/01/16 21:12:46
+-------------- EPOCH  518/1001 --------------
+     Train loss: 0.00008356, accuracy: 100.00%
+Validation loss: 0.01095495, accuracy: 99.70%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:13:19
+      Timestamp: 2018/01/16 21:12:54
+-------------- EPOCH  519/1001 --------------
+     Train loss: 0.00007297, accuracy: 100.00%
+Validation loss: 0.01115207, accuracy: 99.70%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:13:27
+      Timestamp: 2018/01/16 21:13:02
+-------------- EPOCH  520/1001 --------------
+     Train loss: 0.00004383, accuracy: 100.00%
+Validation loss: 0.01102636, accuracy: 99.70%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:13:35
+      Timestamp: 2018/01/16 21:13:10
+-------------- EPOCH  521/1001 --------------
+     Train loss: 0.00002413, accuracy: 100.00%
+Validation loss: 0.01247121, accuracy: 99.64%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:13:43
+      Timestamp: 2018/01/16 21:13:18
+-------------- EPOCH  522/1001 --------------
+     Train loss: 0.00003306, accuracy: 100.00%
+Validation loss: 0.01268200, accuracy: 99.59%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:13:51
+      Timestamp: 2018/01/16 21:13:26
+-------------- EPOCH  523/1001 --------------
+     Train loss: 0.00003143, accuracy: 100.00%
+Validation loss: 0.01275179, accuracy: 99.64%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:13:59
+      Timestamp: 2018/01/16 21:13:35
+-------------- EPOCH  524/1001 --------------
+     Train loss: 0.00001108, accuracy: 100.00%
+Validation loss: 0.01020936, accuracy: 99.75%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:14:07
+      Timestamp: 2018/01/16 21:13:43
+-------------- EPOCH  525/1001 --------------
+     Train loss: 0.00001198, accuracy: 100.00%
+Validation loss: 0.00970089, accuracy: 99.75%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:14:15
+      Timestamp: 2018/01/16 21:13:51
+-------------- EPOCH  526/1001 --------------
+     Train loss: 0.00000716, accuracy: 100.00%
+Validation loss: 0.00926942, accuracy: 99.75%
+      Best loss: 0.00934871 at epoch 512
+   Elapsed time: 01:14:23
+      Timestamp: 2018/01/16 21:13:59
+-------------- EPOCH  527/1001 --------------
+     Train loss: 0.00000714, accuracy: 100.00%
+Validation loss: 0.01044968, accuracy: 99.75%
+      Best loss: 0.00926942 at epoch 526
+   Elapsed time: 01:14:32
+      Timestamp: 2018/01/16 21:14:07
+-------------- EPOCH  528/1001 --------------
+     Train loss: 0.00001330, accuracy: 100.00%
+Validation loss: 0.01084755, accuracy: 99.70%
+      Best loss: 0.00926942 at epoch 526
+   Elapsed time: 01:14:41
+      Timestamp: 2018/01/16 21:14:16
+-------------- EPOCH  529/1001 --------------
+     Train loss: 0.00009031, accuracy: 100.00%
+Validation loss: 0.01241265, accuracy: 99.59%
+      Best loss: 0.00926942 at epoch 526
+   Elapsed time: 01:14:49
+      Timestamp: 2018/01/16 21:14:24
+-------------- EPOCH  530/1001 --------------
+     Train loss: 0.00002016, accuracy: 100.00%
+Validation loss: 0.01241053, accuracy: 99.75%
+      Best loss: 0.00926942 at epoch 526
+   Elapsed time: 01:14:57
+      Timestamp: 2018/01/16 21:14:32
+-------------- EPOCH  531/1001 --------------
+     Train loss: 0.00001696, accuracy: 100.00%
+Validation loss: 0.01137092, accuracy: 99.59%
+      Best loss: 0.00926942 at epoch 526
+   Elapsed time: 01:15:05
+      Timestamp: 2018/01/16 21:14:40
+-------------- EPOCH  532/1001 --------------
+     Train loss: 0.00003932, accuracy: 100.00%
+Validation loss: 0.01500150, accuracy: 99.44%
+      Best loss: 0.00926942 at epoch 526
+   Elapsed time: 01:15:13
+      Timestamp: 2018/01/16 21:14:48
+-------------- EPOCH  533/1001 --------------
+     Train loss: 0.00000795, accuracy: 100.00%
+Validation loss: 0.00905840, accuracy: 99.75%
+      Best loss: 0.00926942 at epoch 526
+   Elapsed time: 01:15:21
+      Timestamp: 2018/01/16 21:14:56
+-------------- EPOCH  534/1001 --------------
+     Train loss: 0.00003062, accuracy: 100.00%
+Validation loss: 0.00978909, accuracy: 99.70%
+      Best loss: 0.00905840 at epoch 533
+   Elapsed time: 01:15:30
+      Timestamp: 2018/01/16 21:15:05
+-------------- EPOCH  535/1001 --------------
+     Train loss: 0.00001599, accuracy: 100.00%
+Validation loss: 0.01223578, accuracy: 99.59%
+      Best loss: 0.00905840 at epoch 533
+   Elapsed time: 01:15:38
+      Timestamp: 2018/01/16 21:15:14
+-------------- EPOCH  536/1001 --------------
+     Train loss: 0.00001057, accuracy: 100.00%
+Validation loss: 0.00939129, accuracy: 99.75%
+      Best loss: 0.00905840 at epoch 533
+   Elapsed time: 01:15:47
+      Timestamp: 2018/01/16 21:15:22
+-------------- EPOCH  537/1001 --------------
+     Train loss: 0.00000508, accuracy: 100.00%
+Validation loss: 0.00905830, accuracy: 99.75%
+      Best loss: 0.00905840 at epoch 533
+   Elapsed time: 01:15:55
+      Timestamp: 2018/01/16 21:15:30
+-------------- EPOCH  538/1001 --------------
+     Train loss: 0.00000561, accuracy: 100.00%
+Validation loss: 0.00867910, accuracy: 99.75%
+      Best loss: 0.00905830 at epoch 537
+   Elapsed time: 01:16:03
+      Timestamp: 2018/01/16 21:15:39
+-------------- EPOCH  539/1001 --------------
+     Train loss: 0.00000465, accuracy: 100.00%
+Validation loss: 0.00958890, accuracy: 99.70%
+      Best loss: 0.00867910 at epoch 538
+   Elapsed time: 01:16:12
+      Timestamp: 2018/01/16 21:15:47
+-------------- EPOCH  540/1001 --------------
+     Train loss: 0.00000402, accuracy: 100.00%
+Validation loss: 0.00966017, accuracy: 99.75%
+      Best loss: 0.00867910 at epoch 538
+   Elapsed time: 01:16:20
+      Timestamp: 2018/01/16 21:15:55
+-------------- EPOCH  541/1001 --------------
+     Train loss: 0.00000653, accuracy: 100.00%
+Validation loss: 0.00962071, accuracy: 99.70%
+      Best loss: 0.00867910 at epoch 538
+   Elapsed time: 01:16:28
+      Timestamp: 2018/01/16 21:16:03
+-------------- EPOCH  542/1001 --------------
+     Train loss: 0.00000395, accuracy: 100.00%
+Validation loss: 0.00917128, accuracy: 99.75%
+      Best loss: 0.00867910 at epoch 538
+   Elapsed time: 01:16:36
+      Timestamp: 2018/01/16 21:16:11
+-------------- EPOCH  543/1001 --------------
+     Train loss: 0.00000371, accuracy: 100.00%
+Validation loss: 0.00956418, accuracy: 99.70%
+      Best loss: 0.00867910 at epoch 538
+   Elapsed time: 01:16:44
+      Timestamp: 2018/01/16 21:16:19
+-------------- EPOCH  544/1001 --------------
+     Train loss: 0.00000381, accuracy: 100.00%
+Validation loss: 0.00999298, accuracy: 99.75%
+      Best loss: 0.00867910 at epoch 538
+   Elapsed time: 01:16:53
+      Timestamp: 2018/01/16 21:16:28
+-------------- EPOCH  545/1001 --------------
+     Train loss: 0.00003610, accuracy: 100.00%
+Validation loss: 0.01088823, accuracy: 99.70%
+      Best loss: 0.00867910 at epoch 538
+   Elapsed time: 01:17:01
+      Timestamp: 2018/01/16 21:16:36
+-------------- EPOCH  546/1001 --------------
+     Train loss: 0.00001091, accuracy: 100.00%
+Validation loss: 0.00907424, accuracy: 99.70%
+      Best loss: 0.00867910 at epoch 538
+   Elapsed time: 01:17:09
+      Timestamp: 2018/01/16 21:16:44
+-------------- EPOCH  547/1001 --------------
+     Train loss: 0.00000758, accuracy: 100.00%
+Validation loss: 0.01071916, accuracy: 99.70%
+      Best loss: 0.00867910 at epoch 538
+   Elapsed time: 01:17:17
+      Timestamp: 2018/01/16 21:16:52
+-------------- EPOCH  548/1001 --------------
+     Train loss: 0.00000425, accuracy: 100.00%
+Validation loss: 0.00904279, accuracy: 99.70%
+      Best loss: 0.00867910 at epoch 538
+   Elapsed time: 01:17:25
+      Timestamp: 2018/01/16 21:17:01
+-------------- EPOCH  549/1001 --------------
+     Train loss: 0.00003436, accuracy: 100.00%
+Validation loss: 0.01363859, accuracy: 99.64%
+      Best loss: 0.00867910 at epoch 538
+   Elapsed time: 01:17:33
+      Timestamp: 2018/01/16 21:17:09
+-------------- EPOCH  550/1001 --------------
+     Train loss: 0.00000705, accuracy: 100.00%
+Validation loss: 0.00895433, accuracy: 99.75%
+      Best loss: 0.00867910 at epoch 538
+   Elapsed time: 01:17:41
+      Timestamp: 2018/01/16 21:17:17
+-------------- EPOCH  551/1001 --------------
+     Train loss: 0.00000557, accuracy: 100.00%
+Validation loss: 0.00866149, accuracy: 99.75%
+      Best loss: 0.00867910 at epoch 538
+   Elapsed time: 01:17:49
+      Timestamp: 2018/01/16 21:17:25
+-------------- EPOCH  552/1001 --------------
+     Train loss: 0.00000461, accuracy: 100.00%
+Validation loss: 0.00925921, accuracy: 99.75%
+      Best loss: 0.00866149 at epoch 551
+   Elapsed time: 01:18:00
+      Timestamp: 2018/01/16 21:17:35
+-------------- EPOCH  553/1001 --------------
+     Train loss: 0.00000420, accuracy: 100.00%
+Validation loss: 0.00901665, accuracy: 99.70%
+      Best loss: 0.00866149 at epoch 551
+   Elapsed time: 01:18:08
+      Timestamp: 2018/01/16 21:17:43
+-------------- EPOCH  554/1001 --------------
+     Train loss: 0.00000447, accuracy: 100.00%
+Validation loss: 0.00923971, accuracy: 99.75%
+      Best loss: 0.00866149 at epoch 551
+   Elapsed time: 01:18:16
+      Timestamp: 2018/01/16 21:17:51
+-------------- EPOCH  555/1001 --------------
+     Train loss: 0.00000619, accuracy: 100.00%
+Validation loss: 0.00947042, accuracy: 99.75%
+      Best loss: 0.00866149 at epoch 551
+   Elapsed time: 01:18:24
+      Timestamp: 2018/01/16 21:17:59
+-------------- EPOCH  556/1001 --------------
+     Train loss: 0.00000438, accuracy: 100.00%
+Validation loss: 0.00915200, accuracy: 99.70%
+      Best loss: 0.00866149 at epoch 551
+   Elapsed time: 01:18:32
+      Timestamp: 2018/01/16 21:18:07
+-------------- EPOCH  557/1001 --------------
+     Train loss: 0.00000504, accuracy: 100.00%
+Validation loss: 0.01014613, accuracy: 99.70%
+      Best loss: 0.00866149 at epoch 551
+   Elapsed time: 01:18:40
+      Timestamp: 2018/01/16 21:18:16
+-------------- EPOCH  558/1001 --------------
+     Train loss: 0.00000444, accuracy: 100.00%
+Validation loss: 0.00951855, accuracy: 99.70%
+      Best loss: 0.00866149 at epoch 551
+   Elapsed time: 01:18:49
+      Timestamp: 2018/01/16 21:18:24
+-------------- EPOCH  559/1001 --------------
+     Train loss: 0.00000473, accuracy: 100.00%
+Validation loss: 0.00829224, accuracy: 99.75%
+      Best loss: 0.00866149 at epoch 551
+   Elapsed time: 01:18:57
+      Timestamp: 2018/01/16 21:18:32
+-------------- EPOCH  560/1001 --------------
+     Train loss: 0.00000675, accuracy: 100.00%
+Validation loss: 0.00915452, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:19:05
+      Timestamp: 2018/01/16 21:18:41
+-------------- EPOCH  561/1001 --------------
+     Train loss: 0.00000580, accuracy: 100.00%
+Validation loss: 0.01065720, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:19:13
+      Timestamp: 2018/01/16 21:18:49
+-------------- EPOCH  562/1001 --------------
+     Train loss: 0.00000513, accuracy: 100.00%
+Validation loss: 0.00964801, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:19:21
+      Timestamp: 2018/01/16 21:18:57
+-------------- EPOCH  563/1001 --------------
+     Train loss: 0.00000464, accuracy: 100.00%
+Validation loss: 0.00951233, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:19:30
+      Timestamp: 2018/01/16 21:19:05
+-------------- EPOCH  564/1001 --------------
+     Train loss: 0.00000674, accuracy: 100.00%
+Validation loss: 0.01084515, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:19:38
+      Timestamp: 2018/01/16 21:19:13
+-------------- EPOCH  565/1001 --------------
+     Train loss: 0.00000531, accuracy: 100.00%
+Validation loss: 0.00905728, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:19:46
+      Timestamp: 2018/01/16 21:19:21
+-------------- EPOCH  566/1001 --------------
+     Train loss: 0.00000646, accuracy: 100.00%
+Validation loss: 0.00863932, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:19:54
+      Timestamp: 2018/01/16 21:19:30
+-------------- EPOCH  567/1001 --------------
+     Train loss: 0.00000558, accuracy: 100.00%
+Validation loss: 0.01001275, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:20:03
+      Timestamp: 2018/01/16 21:19:38
+-------------- EPOCH  568/1001 --------------
+     Train loss: 0.00000503, accuracy: 100.00%
+Validation loss: 0.01004258, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:20:11
+      Timestamp: 2018/01/16 21:19:47
+-------------- EPOCH  569/1001 --------------
+     Train loss: 0.00000498, accuracy: 100.00%
+Validation loss: 0.01001269, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:20:19
+      Timestamp: 2018/01/16 21:19:55
+-------------- EPOCH  570/1001 --------------
+     Train loss: 0.00000715, accuracy: 100.00%
+Validation loss: 0.00927391, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:20:27
+      Timestamp: 2018/01/16 21:20:03
+-------------- EPOCH  571/1001 --------------
+     Train loss: 0.00001236, accuracy: 100.00%
+Validation loss: 0.01159523, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:20:35
+      Timestamp: 2018/01/16 21:20:11
+-------------- EPOCH  572/1001 --------------
+     Train loss: 0.00241930, accuracy: 99.95%
+Validation loss: 0.02713448, accuracy: 99.04%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:20:43
+      Timestamp: 2018/01/16 21:20:19
+-------------- EPOCH  573/1001 --------------
+     Train loss: 0.00035026, accuracy: 100.00%
+Validation loss: 0.01406996, accuracy: 99.54%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:20:51
+      Timestamp: 2018/01/16 21:20:27
+-------------- EPOCH  574/1001 --------------
+     Train loss: 0.00006020, accuracy: 100.00%
+Validation loss: 0.01157482, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:20:59
+      Timestamp: 2018/01/16 21:20:35
+-------------- EPOCH  575/1001 --------------
+     Train loss: 0.00002711, accuracy: 100.00%
+Validation loss: 0.01089227, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:21:08
+      Timestamp: 2018/01/16 21:20:43
+-------------- EPOCH  576/1001 --------------
+     Train loss: 0.00002611, accuracy: 100.00%
+Validation loss: 0.01007346, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:21:16
+      Timestamp: 2018/01/16 21:20:52
+-------------- EPOCH  577/1001 --------------
+     Train loss: 0.00005430, accuracy: 100.00%
+Validation loss: 0.01605926, accuracy: 99.59%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:21:25
+      Timestamp: 2018/01/16 21:21:00
+-------------- EPOCH  578/1001 --------------
+     Train loss: 0.00002029, accuracy: 100.00%
+Validation loss: 0.01066498, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:21:33
+      Timestamp: 2018/01/16 21:21:08
+-------------- EPOCH  579/1001 --------------
+     Train loss: 0.00002457, accuracy: 100.00%
+Validation loss: 0.00967746, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:21:41
+      Timestamp: 2018/01/16 21:21:16
+-------------- EPOCH  580/1001 --------------
+     Train loss: 0.00002350, accuracy: 100.00%
+Validation loss: 0.01162055, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:21:49
+      Timestamp: 2018/01/16 21:21:24
+-------------- EPOCH  581/1001 --------------
+     Train loss: 0.00001539, accuracy: 100.00%
+Validation loss: 0.01094664, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:21:57
+      Timestamp: 2018/01/16 21:21:32
+-------------- EPOCH  582/1001 --------------
+     Train loss: 0.00001200, accuracy: 100.00%
+Validation loss: 0.00949140, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:22:05
+      Timestamp: 2018/01/16 21:21:40
+-------------- EPOCH  583/1001 --------------
+     Train loss: 0.00001902, accuracy: 100.00%
+Validation loss: 0.01100906, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:22:13
+      Timestamp: 2018/01/16 21:21:49
+-------------- EPOCH  584/1001 --------------
+     Train loss: 0.00001435, accuracy: 100.00%
+Validation loss: 0.01024988, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:22:22
+      Timestamp: 2018/01/16 21:21:57
+-------------- EPOCH  585/1001 --------------
+     Train loss: 0.00001085, accuracy: 100.00%
+Validation loss: 0.01119522, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:22:30
+      Timestamp: 2018/01/16 21:22:06
+-------------- EPOCH  586/1001 --------------
+     Train loss: 0.00000926, accuracy: 100.00%
+Validation loss: 0.00983425, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:22:38
+      Timestamp: 2018/01/16 21:22:14
+-------------- EPOCH  587/1001 --------------
+     Train loss: 0.00000766, accuracy: 100.00%
+Validation loss: 0.00977978, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:22:46
+      Timestamp: 2018/01/16 21:22:22
+-------------- EPOCH  588/1001 --------------
+     Train loss: 0.00000736, accuracy: 100.00%
+Validation loss: 0.01021819, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:22:54
+      Timestamp: 2018/01/16 21:22:30
+-------------- EPOCH  589/1001 --------------
+     Train loss: 0.00000711, accuracy: 100.00%
+Validation loss: 0.01026131, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:23:02
+      Timestamp: 2018/01/16 21:22:38
+-------------- EPOCH  590/1001 --------------
+     Train loss: 0.00000648, accuracy: 100.00%
+Validation loss: 0.00989967, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:23:10
+      Timestamp: 2018/01/16 21:22:46
+-------------- EPOCH  591/1001 --------------
+     Train loss: 0.00000705, accuracy: 100.00%
+Validation loss: 0.00977252, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:23:18
+      Timestamp: 2018/01/16 21:22:54
+-------------- EPOCH  592/1001 --------------
+     Train loss: 0.00000905, accuracy: 100.00%
+Validation loss: 0.00899085, accuracy: 99.80%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:23:27
+      Timestamp: 2018/01/16 21:23:03
+-------------- EPOCH  593/1001 --------------
+     Train loss: 0.00001457, accuracy: 100.00%
+Validation loss: 0.01064928, accuracy: 99.59%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:23:36
+      Timestamp: 2018/01/16 21:23:11
+-------------- EPOCH  594/1001 --------------
+     Train loss: 0.00001235, accuracy: 100.00%
+Validation loss: 0.01099963, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:23:44
+      Timestamp: 2018/01/16 21:23:19
+-------------- EPOCH  595/1001 --------------
+     Train loss: 0.00000889, accuracy: 100.00%
+Validation loss: 0.01042206, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:23:52
+      Timestamp: 2018/01/16 21:23:27
+-------------- EPOCH  596/1001 --------------
+     Train loss: 0.00000706, accuracy: 100.00%
+Validation loss: 0.00939609, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:24:00
+      Timestamp: 2018/01/16 21:23:35
+-------------- EPOCH  597/1001 --------------
+     Train loss: 0.00000903, accuracy: 100.00%
+Validation loss: 0.01045189, accuracy: 99.80%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:24:08
+      Timestamp: 2018/01/16 21:23:43
+-------------- EPOCH  598/1001 --------------
+     Train loss: 0.00000697, accuracy: 100.00%
+Validation loss: 0.01009711, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:24:16
+      Timestamp: 2018/01/16 21:23:51
+-------------- EPOCH  599/1001 --------------
+     Train loss: 0.00000636, accuracy: 100.00%
+Validation loss: 0.00958687, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:24:24
+      Timestamp: 2018/01/16 21:23:59
+-------------- EPOCH  600/1001 --------------
+     Train loss: 0.00000630, accuracy: 100.00%
+Validation loss: 0.00974853, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:24:32
+      Timestamp: 2018/01/16 21:24:08
+-------------- EPOCH  601/1001 --------------
+     Train loss: 0.00000604, accuracy: 100.00%
+Validation loss: 0.00979419, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:24:41
+      Timestamp: 2018/01/16 21:24:16
+-------------- EPOCH  602/1001 --------------
+     Train loss: 0.00000781, accuracy: 100.00%
+Validation loss: 0.01039773, accuracy: 99.80%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:24:49
+      Timestamp: 2018/01/16 21:24:25
+-------------- EPOCH  603/1001 --------------
+     Train loss: 0.00000669, accuracy: 100.00%
+Validation loss: 0.01042758, accuracy: 99.80%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:24:57
+      Timestamp: 2018/01/16 21:24:33
+-------------- EPOCH  604/1001 --------------
+     Train loss: 0.00000529, accuracy: 100.00%
+Validation loss: 0.01016731, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:25:05
+      Timestamp: 2018/01/16 21:24:41
+-------------- EPOCH  605/1001 --------------
+     Train loss: 0.00000576, accuracy: 100.00%
+Validation loss: 0.00998048, accuracy: 99.80%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:25:13
+      Timestamp: 2018/01/16 21:24:49
+-------------- EPOCH  606/1001 --------------
+     Train loss: 0.00000591, accuracy: 100.00%
+Validation loss: 0.01021893, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:25:21
+      Timestamp: 2018/01/16 21:24:57
+-------------- EPOCH  607/1001 --------------
+     Train loss: 0.00000695, accuracy: 100.00%
+Validation loss: 0.01129326, accuracy: 99.80%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:25:30
+      Timestamp: 2018/01/16 21:25:05
+-------------- EPOCH  608/1001 --------------
+     Train loss: 0.00000942, accuracy: 100.00%
+Validation loss: 0.01011488, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:25:38
+      Timestamp: 2018/01/16 21:25:13
+-------------- EPOCH  609/1001 --------------
+     Train loss: 0.00000739, accuracy: 100.00%
+Validation loss: 0.01025007, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:25:46
+      Timestamp: 2018/01/16 21:25:21
+-------------- EPOCH  610/1001 --------------
+     Train loss: 0.00000598, accuracy: 100.00%
+Validation loss: 0.00969635, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:25:54
+      Timestamp: 2018/01/16 21:25:30
+-------------- EPOCH  611/1001 --------------
+     Train loss: 0.00000527, accuracy: 100.00%
+Validation loss: 0.00965320, accuracy: 99.80%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:26:03
+      Timestamp: 2018/01/16 21:25:38
+-------------- EPOCH  612/1001 --------------
+     Train loss: 0.00012576, accuracy: 100.00%
+Validation loss: 0.01585084, accuracy: 99.49%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:26:11
+      Timestamp: 2018/01/16 21:25:46
+-------------- EPOCH  613/1001 --------------
+     Train loss: 0.00004760, accuracy: 100.00%
+Validation loss: 0.01264218, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:26:19
+      Timestamp: 2018/01/16 21:25:55
+-------------- EPOCH  614/1001 --------------
+     Train loss: 0.00001031, accuracy: 100.00%
+Validation loss: 0.01095669, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:26:27
+      Timestamp: 2018/01/16 21:26:03
+-------------- EPOCH  615/1001 --------------
+     Train loss: 0.00001708, accuracy: 100.00%
+Validation loss: 0.01266587, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:26:35
+      Timestamp: 2018/01/16 21:26:11
+-------------- EPOCH  616/1001 --------------
+     Train loss: 0.00000739, accuracy: 100.00%
+Validation loss: 0.00918339, accuracy: 99.59%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:26:43
+      Timestamp: 2018/01/16 21:26:19
+-------------- EPOCH  617/1001 --------------
+     Train loss: 0.00000526, accuracy: 100.00%
+Validation loss: 0.00921818, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:26:51
+      Timestamp: 2018/01/16 21:26:27
+-------------- EPOCH  618/1001 --------------
+     Train loss: 0.00000569, accuracy: 100.00%
+Validation loss: 0.00934351, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:26:59
+      Timestamp: 2018/01/16 21:26:35
+-------------- EPOCH  619/1001 --------------
+     Train loss: 0.00000605, accuracy: 100.00%
+Validation loss: 0.00958154, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:27:07
+      Timestamp: 2018/01/16 21:26:43
+-------------- EPOCH  620/1001 --------------
+     Train loss: 0.00000571, accuracy: 100.00%
+Validation loss: 0.00950479, accuracy: 99.80%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:27:16
+      Timestamp: 2018/01/16 21:26:51
+-------------- EPOCH  621/1001 --------------
+     Train loss: 0.00000495, accuracy: 100.00%
+Validation loss: 0.00964920, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:27:24
+      Timestamp: 2018/01/16 21:27:00
+-------------- EPOCH  622/1001 --------------
+     Train loss: 0.00000553, accuracy: 100.00%
+Validation loss: 0.00973152, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:27:33
+      Timestamp: 2018/01/16 21:27:08
+-------------- EPOCH  623/1001 --------------
+     Train loss: 0.00000519, accuracy: 100.00%
+Validation loss: 0.00949881, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:27:41
+      Timestamp: 2018/01/16 21:27:16
+-------------- EPOCH  624/1001 --------------
+     Train loss: 0.00000459, accuracy: 100.00%
+Validation loss: 0.00990894, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:27:49
+      Timestamp: 2018/01/16 21:27:24
+-------------- EPOCH  625/1001 --------------
+     Train loss: 0.00000464, accuracy: 100.00%
+Validation loss: 0.01007891, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:27:57
+      Timestamp: 2018/01/16 21:27:32
+-------------- EPOCH  626/1001 --------------
+     Train loss: 0.00000497, accuracy: 100.00%
+Validation loss: 0.00980236, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:28:05
+      Timestamp: 2018/01/16 21:27:40
+-------------- EPOCH  627/1001 --------------
+     Train loss: 0.00000451, accuracy: 100.00%
+Validation loss: 0.00961450, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:28:13
+      Timestamp: 2018/01/16 21:27:48
+-------------- EPOCH  628/1001 --------------
+     Train loss: 0.00000493, accuracy: 100.00%
+Validation loss: 0.01046441, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:28:21
+      Timestamp: 2018/01/16 21:27:56
+-------------- EPOCH  629/1001 --------------
+     Train loss: 0.00000489, accuracy: 100.00%
+Validation loss: 0.01014116, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:28:30
+      Timestamp: 2018/01/16 21:28:05
+-------------- EPOCH  630/1001 --------------
+     Train loss: 0.00000566, accuracy: 100.00%
+Validation loss: 0.00976665, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:28:38
+      Timestamp: 2018/01/16 21:28:13
+-------------- EPOCH  631/1001 --------------
+     Train loss: 0.00000573, accuracy: 100.00%
+Validation loss: 0.00986159, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:28:46
+      Timestamp: 2018/01/16 21:28:21
+-------------- EPOCH  632/1001 --------------
+     Train loss: 0.00001118, accuracy: 100.00%
+Validation loss: 0.01108580, accuracy: 99.85%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:28:54
+      Timestamp: 2018/01/16 21:28:29
+-------------- EPOCH  633/1001 --------------
+     Train loss: 0.00000835, accuracy: 100.00%
+Validation loss: 0.01207212, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:29:02
+      Timestamp: 2018/01/16 21:28:38
+-------------- EPOCH  634/1001 --------------
+     Train loss: 0.00000919, accuracy: 100.00%
+Validation loss: 0.01064641, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:29:10
+      Timestamp: 2018/01/16 21:28:46
+-------------- EPOCH  635/1001 --------------
+     Train loss: 0.00001355, accuracy: 100.00%
+Validation loss: 0.00924926, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:29:18
+      Timestamp: 2018/01/16 21:28:54
+-------------- EPOCH  636/1001 --------------
+     Train loss: 0.00000763, accuracy: 100.00%
+Validation loss: 0.00953781, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:29:26
+      Timestamp: 2018/01/16 21:29:02
+-------------- EPOCH  637/1001 --------------
+     Train loss: 0.00001149, accuracy: 100.00%
+Validation loss: 0.01003046, accuracy: 99.80%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:29:35
+      Timestamp: 2018/01/16 21:29:10
+-------------- EPOCH  638/1001 --------------
+     Train loss: 0.00000775, accuracy: 100.00%
+Validation loss: 0.00939081, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:29:43
+      Timestamp: 2018/01/16 21:29:19
+-------------- EPOCH  639/1001 --------------
+     Train loss: 0.00001399, accuracy: 100.00%
+Validation loss: 0.01234450, accuracy: 99.59%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:29:51
+      Timestamp: 2018/01/16 21:29:27
+-------------- EPOCH  640/1001 --------------
+     Train loss: 0.00000726, accuracy: 100.00%
+Validation loss: 0.00891235, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:30:00
+      Timestamp: 2018/01/16 21:29:35
+-------------- EPOCH  641/1001 --------------
+     Train loss: 0.00001065, accuracy: 100.00%
+Validation loss: 0.01050553, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:30:08
+      Timestamp: 2018/01/16 21:29:43
+-------------- EPOCH  642/1001 --------------
+     Train loss: 0.00004149, accuracy: 100.00%
+Validation loss: 0.01407700, accuracy: 99.59%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:30:16
+      Timestamp: 2018/01/16 21:29:51
+-------------- EPOCH  643/1001 --------------
+     Train loss: 0.00959804, accuracy: 99.54%
+Validation loss: 0.03388520, accuracy: 99.14%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:30:24
+      Timestamp: 2018/01/16 21:29:59
+-------------- EPOCH  644/1001 --------------
+     Train loss: 0.00004410, accuracy: 100.00%
+Validation loss: 0.01148095, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:30:32
+      Timestamp: 2018/01/16 21:30:07
+-------------- EPOCH  645/1001 --------------
+     Train loss: 0.00001021, accuracy: 100.00%
+Validation loss: 0.01143959, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:30:40
+      Timestamp: 2018/01/16 21:30:15
+-------------- EPOCH  646/1001 --------------
+     Train loss: 0.00001174, accuracy: 100.00%
+Validation loss: 0.01025571, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:30:48
+      Timestamp: 2018/01/16 21:30:23
+-------------- EPOCH  647/1001 --------------
+     Train loss: 0.00001018, accuracy: 100.00%
+Validation loss: 0.01031818, accuracy: 99.75%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:30:56
+      Timestamp: 2018/01/16 21:30:32
+-------------- EPOCH  648/1001 --------------
+     Train loss: 0.00004518, accuracy: 100.00%
+Validation loss: 0.01245144, accuracy: 99.54%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:31:05
+      Timestamp: 2018/01/16 21:30:40
+-------------- EPOCH  649/1001 --------------
+     Train loss: 0.00001160, accuracy: 100.00%
+Validation loss: 0.00934980, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:31:13
+      Timestamp: 2018/01/16 21:30:49
+-------------- EPOCH  650/1001 --------------
+     Train loss: 0.00045849, accuracy: 100.00%
+Validation loss: 0.02133923, accuracy: 99.34%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:31:21
+      Timestamp: 2018/01/16 21:30:57
+-------------- EPOCH  651/1001 --------------
+     Train loss: 0.00006457, accuracy: 100.00%
+Validation loss: 0.01343593, accuracy: 99.59%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:31:29
+      Timestamp: 2018/01/16 21:31:05
+-------------- EPOCH  652/1001 --------------
+     Train loss: 0.00001433, accuracy: 100.00%
+Validation loss: 0.01130272, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:31:37
+      Timestamp: 2018/01/16 21:31:13
+-------------- EPOCH  653/1001 --------------
+     Train loss: 0.00000863, accuracy: 100.00%
+Validation loss: 0.00970476, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:31:45
+      Timestamp: 2018/01/16 21:31:21
+-------------- EPOCH  654/1001 --------------
+     Train loss: 0.00000841, accuracy: 100.00%
+Validation loss: 0.01065803, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:31:53
+      Timestamp: 2018/01/16 21:31:29
+-------------- EPOCH  655/1001 --------------
+     Train loss: 0.00006293, accuracy: 100.00%
+Validation loss: 0.01342539, accuracy: 99.54%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:32:01
+      Timestamp: 2018/01/16 21:31:37
+-------------- EPOCH  656/1001 --------------
+     Train loss: 0.00015610, accuracy: 100.00%
+Validation loss: 0.02272907, accuracy: 99.34%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:32:09
+      Timestamp: 2018/01/16 21:31:45
+-------------- EPOCH  657/1001 --------------
+     Train loss: 0.00006814, accuracy: 100.00%
+Validation loss: 0.01766170, accuracy: 99.39%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:32:18
+      Timestamp: 2018/01/16 21:31:53
+-------------- EPOCH  658/1001 --------------
+     Train loss: 0.00004254, accuracy: 100.00%
+Validation loss: 0.01449223, accuracy: 99.54%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:32:26
+      Timestamp: 2018/01/16 21:32:01
+-------------- EPOCH  659/1001 --------------
+     Train loss: 0.00001715, accuracy: 100.00%
+Validation loss: 0.01325805, accuracy: 99.70%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:32:34
+      Timestamp: 2018/01/16 21:32:10
+-------------- EPOCH  660/1001 --------------
+     Train loss: 0.00005302, accuracy: 100.00%
+Validation loss: 0.01741845, accuracy: 99.64%
+      Best loss: 0.00829224 at epoch 559
+   Elapsed time: 01:32:43
+      Timestamp: 2018/01/16 21:32:18
+=============================================
+ Valid loss: 0.00829224, accuracy = 99.75%)

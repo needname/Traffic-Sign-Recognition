@@ -1,0 +1,193 @@
+﻿- This project requires **Python 3.5** and the following Python libraries installed:
+
+	[Jupyter](http://jupyter.org/)
+	[NumPy](http://www.numpy.org/)
+	[SciPy](https://www.scipy.org/)
+	[scikit-learn](http://scikit-learn.org/)
+	[TensorFlow](http://tensorflow.org)
+	[Matplotlib](http://matplotlib.org/)
+	[Pandas](http://pandas.pydata.org/)
+	[skimage]
+	
+- Các kiểu dữ liệu trong Python: 
+https://quantrimang.com/gioi-thieu-qua-ve-chuoi-so-list-trong-python-140881
+- Tuple: 1 chuỗi các immutable Python objects. Tuple là chuỗi như list.
+Nhưng tuple ko thay đổi được và dùng (), list dùng []
+	https://techmaster.vn/posts/34290/java-immutable-la-gi
+- Hiển thị hình ảnh với array
+	import matplotlib.pyplot as plt
+	plt.imshow(image)
+	Chú ý nếu hiển thị 1 kênh, sẽ tự động hiển thị với colormap, muốn hiển thị 
+	grayscale thì thêm plt.imshow(image, cmap = "gray")
+- dùng map và lambda để tạo file pickle dùng để lưu trữ vùng data lớn: https://www.python-course.eu/python3_lambda.php
+- PICKLE: https://pythontips.com/2013/08/02/what-is-pickle-in-python/
+	+ Pickle file dùng để serializing và deserializing 1 Python object structure
+	+ Mọi object trong python đều có thể pickle để lưu trên đĩa
+	+ Pickle: serializing object trước khi ghi lên file(chuyển object thành 1 
+	character stream)
+	+ Code: 
+	-------------------------------------------------------------------
+	import pickle
+
+	a = ['test value','test value 2','test value 3']
+	a
+	['test value','test value 2','test value 3']
+
+	file_Name = "testfile"
+	# open the file for writing
+	fileObject = open(file_Name,'wb') 
+
+	# this writes the object a to the	
+	# file named 'testfile'
+	pickle.dump(a,fileObject)   
+
+	# here we close the fileObject
+	fileObject.close()
+	# we open the file for reading
+	fileObject = open(file_Name,'r')  
+	# load the object from the file into var b
+	b = pickle.load(fileObject)  
+	b
+	['test value','test value 2','test value 3']
+	a==b
+	True
+	-------------------------------------------------------------------
+	+ Lý do sử dụng pickle file trong python:
+		- Lưu trạng thái của CT vào đĩa để thực hiện nốt phần còn lại khi restart
+		- Gửi python data thông qua kết nối TCP trong hệ thống đa lõi hay distributed (marshalling)
+		- Lưu trữ python objects trong database
+		- Chuyển 1 python object hay thay đổi thành 1 string để có thể 
+dùng như 1 dictionary key(VD cho caching & memoization  kỹ thuật tối ưu, nhằm tăng tốc chương trình bằng cách lưu trữ kết quả của các câu gọi function và trả về các kết quả này khi function được gọi với cùng input đã gọi http://pymi.vn/blog/memoization/) (xem dictionary key :https://www.tutorialspoint.com/python/dictionary_keys.htm)
+
+- Đọc data set thuần trong thư mục (đã test): 
+	import os
+	os.getcwd() #tra ve thu muc dang lam viec
+	#VD ve doc du lieu trong thu muc hien tai
+	# Get all subdirectories of data_dir. Each represents a label
+	data_dir = os.getcwd() 
+	# = '/home/blue/Desktop/D/cds/python_ml/my_pro/traffic_sign'
+	def load_data(data_dir):
+		#os.listdir liet ke tat ca cac file trong thu muc data_dir
+		#kiem tra tung file xem file nao la thu muc thi luu vao mang 	directories
+		directories = [d for d in os.listdir(data_dir) if os.path.isdir(os.path.join(data_dir,d))]
+		# Loop through the label directories and collect the data in
+	    	# two lists, labels and images.
+	    	labels = []
+	    	images = []
+	    	for d in directories:
+	        	label_dir = os.path.join(data_dir, d)
+			# file_names là list của phần tử đầu tiên với các điều kiện ở phía sau
+	        	file_names = [os.path.join(label_dir, f) 
+         	             for f in os.listdir(label_dir) 
+         	             if f.endswith(".ppm")]
+        		for f in file_names:
+         	   		images.append(skimage.io.imread(f))
+         	   		labels.append(int(d))	
+		 return images, labels
+
+	images, labels = load_data(data_dir)
+
+- Đọc dựa trên file .csv (mà lúc mình đổi file csv thì nó bị lỗi thấy file text dấu ";" ngăn cách biến thành ",", và nó gộp toàn bộ lại chứ ko phân ra nữa, mình đổi lại ";" nó cũng vẫn sai), xem trong file ~/my_pro/readTrafficSign.py
+- Resize image: vì thuật toán yêu cầu input phải có kích thước cố định. Resize vs rescale http://guides.lib.umich.edu/c.php?g=282942&p=1885347
+- Convert list thành numpy array, xem trong file ~/my_pro/readTrafficSign.py. Nguyên nhân (xem thêm: https://stackoverflow.com/questions/993984/why-numpy-instead-of-python-lists):
+	+ NumPy's arrays are more compact than Python lists -- a list of lists as you describe, in Python, would take at least 20 MB or so, while a NumPy 3D array with single-precision floats in the cells would fit in 4 MB. Access in reading and writing items is also faster with NumPy.
+
+	+ Maybe you don't care that much for just a million cells, but you definitely would for a billion cells -- neither approach would fit in a 32-bit architecture, but with 64-bit builds NumPy would get away with 4 GB or so, Python alone would need at least about 12 GB (lots of pointers which double in size) -- a much costlier piece of hardware!
+
+	+ The difference is mostly due to "indirectness" -- a Python list is an array of pointers to Python objects, at least 4 bytes per pointer plus 16 bytes for even the smallest Python object (4 for type pointer, 4 for reference count, 4 for value -- and the memory allocators rounds up to 16). A NumPy array is an array of uniform values -- single-precision numbers takes 4 bytes each, double-precision ones, 8 bytes. Less flexible, but you pay substantially for the flexibility of standard Python lists!
+
+=> It's not usually a good idea to load the whole dataset into memory, but this dataset is small and we're trying to keep the code simple, so it's okay for now. We'll improve it in the next part. For larger datasets, we'd want to have a separate thread loading chunks of data in the background and feeding them to the training thread. https://github.com/waleedka/traffic-signs-tensorflow/blob/master/notebook1.ipynb
+	
+- Example of using convolution neural network model:
+	https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/convolutional_network.py
+	
+- Traffic sign detection: 
+	https://github.com/georgesung/ssd_tensorflow_traffic_sign_detection
+	https://github.com/AutoModelCar/AutoModelCarWiki/wiki/traffic-sign-detection
+	https://github.com/hengck23-udacity/udacity-driverless-car-nd-p2
+	
+- Xử lý ảnh với python:
+	+ https://matplotlib.org/users/image_tutorial.html
+	
+Classification:
+- Tiền xử lý: 
+	+ Có nên lọc nhiễu??Numpy arrays
+	+ Nên shuffle tập data set trước
+	+ Kiểm tra tập data set có số lượng ngang nhau ko? Nếu ko thì thực hiện
+	data augmentation
+	+ Chuyển về Y channel vì dùng color channel cũng ko cải thiện nhiều
+	+ Localized histogram equalization để cải thiện độ tương phản của ảnh, 
+	vì các ảnh ở độ sáng, độ tương phản khác nhau, nếu tối, độ tương phản 
+	ko rõ ràng, có một số vùng rất cao, một số vùng ko có gì, equalization 
+	sẽ duỗi histogram về 2 phía đầu cuối: 
+	https://docs.opencv.org/3.1.0/d5/daf/tutorial_py_histogram_equalization.html
+	+ Có thể dùng opencv hay numpy hay skimage
+	
+	GLOBAL HISTOGRAM EQUALIZATION: phù hợp khi vùng màu tập trung ở một
+	khoảng nhất định. Nếu vùng màu biến thiên lớn thì có thể làm mất 1 
+	số đặc điểm quan trọng
+	
+	+ Code numpy: 
+		import cv2
+		import numpy as np
+		from matplotlib import pyplot as plt
+    
+		img = cv2.imread('wiki.jpg',0)
+    
+		hist,bins = np.histogram(img.flatten(),256,[0,256])
+    
+		cdf = hist.cumsum()
+		cdf_normalized = cdf * hist.max()/ cdf.max()
+    
+		plt.plot(cdf_normalized, color = 'b')
+		plt.hist(img.flatten(),256,[0,256], color = 'r')
+		plt.xlim([0,256])
+		plt.legend(('cdf','histogram'), loc = 'upper left')
+		plt.show()
+		
+		cdf_m = np.ma.masked_equal(cdf,0)
+		cdf_m = (cdf_m - cdf_m.min())*255/(cdf_m.max()-cdf_m.min())
+		cdf = np.ma.filled(cdf_m,0).astype('uint8')
+		img2 = cdf[img]
+	+ Code opencv:
+		img = cv2.imread('wiki.jpg',0)
+		equ = cv2.equalizeHist(img)
+		res = np.hstack((img,equ)) #stacking images side-by-side
+		cv2.imwrite('res.png',res)
+	+ Code skimage:
+		...
+		
+	CLAHE (Contrast Limited Adaptive Histogram Equalization)
+	Để giải quyết vấn đề của GLOBAL HISTOGRAM EQUALIZATION, ta dùng ADAPTIVE
+HISTOGRAM EQUALIZATION. Ảnh được chia thành các khối nhỏ được gọi là tiles (mặc định 8x8 trong OPENCV). Mỗi khối được histogram equalization như trên,
+nhưng nếu có nhiễu thì nhiễu sẽ được khuếch đại rõ lên. Để tránh điều này, contrast limiting (default 40) được áp dụng. Nếu histogram bin(To construct a histogram from a continuous variable you first need to split the data into intervals, called bins)>contrast limit, những pixel này sẽ được cắt bỏ	và phân phối đồng đều đến những bin khác trước khi thực hiện histogram equalization. Sau đó, để loại bỏ những phần lạ trong tile border, dùng bilinear interpolation
+	+ Code opencv:
+		import cv2
+    
+		img = cv2.imread('tsukuba_l.png',0)
+    
+		# create a CLAHE object (Arguments are optional).
+		clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
+		cl1 = clahe.apply(img)
+		
+		cv2.imwrite('clahe_2.jpg',cl1)
+	+ Code skimage:
+		from skimage import exposure
+		# Apply adaptive histogram localization
+		# X là ảnh xám
+		for i in range(X.shape[0]): #The shape attribute for numpy arrays returns the 
+		# dimensions of the array. If X has n rows and m columns, then X.shape is (n,m). Numpy arrays
+		# So X.shape[0] is n
+			X[i] = exposure.eNumpy arraysqualize_adapthist(X[i])
+	
+	+ Augmentation:
+		Flipping: flip sang phải, flip xuống, flip phải + xuống
+		Rotation and projection
+		Blur, noize and gamma adjusting ko thay đổi gì nhiều
+	+ Chia tập dataset thành 2 phần: 80/20 dùng để training và validation
+	+ Dùng convolution neural network: 3 convolution layers for feature extraction và 1 fully connected layer as a classifier.
+		Regularization: 
+		Dropout: sẽ cải thiện đáng kể sự generalization của mô hình. Thường thì chỉ cần apply dropout cho fully connected layers vì bản thân shared weights	trong lớp convolution đều là regularizers. Nhưng có 1 sự cải thiện nhẹ
+trong performance khi dùng 1 ít dropout trên lớp tích chập, nhưng chú ý	giữ ở mức tối thiểu L2 Regularization: lambda = 0.0001 perform best. 
+	
+		
